@@ -1,0 +1,14 @@
+{
+  "sitetitle": "Atelier Bram de Haan",
+  "description": "2D Vormgeving",
+  "author": "Bram de Haan <info@atelierbramdehaan.nl>",
+  "org": "Atelier Bram de Haan",
+  "license-type": "copyright 2015 Atelier Bram de Haan",
+  "license-url": "http://atelierbram.mit-license.org/",
+  "homepage": "http://atelierbramdehaan.nl/",
+  "codepen-blog": "http://codepen.io/atelierbram/blog",
+  "year": "2015",
+  "repository-url": "https://github.com/atelierbram/atelierbramdehaan.nl",
+  "repository-readme-link": "https://github.com/atelierbram/atelierbramdehaan.nl/blob/master/README.md", 
+  "keywords": "Kunst, Art, Paintings, Schilderijen, Webdesign, Frontend, Design, 2D-Design, Documentation, Culture"
+}
