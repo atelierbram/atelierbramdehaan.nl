@@ -13,7 +13,7 @@ module.exports = function(grunt) {
             layout: 'layout.hbs',
             partials: 'src/templates/partials/**/*.hbs',
             layoutdir: 'src/templates/layouts',
-            helpers: ['handlebars-helper-autolink','handlebars-helper-isActive','src/helpers/**.js']
+            helpers: ['handlebars-helper-autolink','handlebars-helper-isactive','src/helpers/**.js']
         },
 
         site: {
