@@ -40,8 +40,9 @@ module.exports = function(grunt) {
       sass: {
         dist: {
           files: {
-                'dist/static/style.css': 'src/sass/style.scss',
-                'dist/static/home.css': 'src/sass/home.scss'
+                'dist/static/css/style.css': 'src/sass/style.scss',
+                'dist/static/css/home.css': 'src/sass/home.scss',
+                'dist/static/css/lib/mobile-custom-v1.css': 'src/sass/lib/mobile-custom-v1.scss'
           }
         }
       },
@@ -55,8 +56,9 @@ module.exports = function(grunt) {
           expand: true,
           flatten: true,
           files: {
-            'dist/static/prefixed/style.css': 'dist/static/style.css',
-            'dist/static/prefixed/home.css': 'dist/static/home.css'
+            'dist/static/prefixed/style.css': 'dist/static/css/style.css',
+            'dist/static/prefixed/home.css': 'dist/static/css/home.css',
+            'dist/static/prefixed/mobile-custom-v1.css': 'dist/static/css/lib/mobile-custom-v1.css'
           }
         }
       },
@@ -65,7 +67,8 @@ module.exports = function(grunt) {
         dist: {
           files: {
           'dist/static/prefixed/style.min.css': 'dist/static/prefixed/style.css',
-          'dist/static/prefixed/home.min.css': 'dist/static/prefixed/home.css'
+          'dist/static/prefixed/home.min.css': 'dist/static/prefixed/home.css',
+          'dist/static/prefixed/mobile-custom-v1.min.css': 'dist/static/prefixed/mobile-custom-v1.css'
           }
         }
       },
@@ -97,7 +100,7 @@ module.exports = function(grunt) {
       concat: {
          dist: {
            files: {
-             'dist/static/main.js' :  ['src/js/svg-test.js'],
+             'dist/static/js/main.js' :  ['src/js/svg-test.js'],
            }
          }
        },
@@ -108,7 +111,7 @@ module.exports = function(grunt) {
         },
         dist: {
           files: {
-            'dist/static/main.min.js' : 'dist/static/main.js',
+            'dist/static/js/main.min.js' : 'dist/static/js/main.js',
           }
         }
       },
@@ -119,7 +122,7 @@ module.exports = function(grunt) {
              renameFiles: false
          },
          dist: {
-             src: ['dist/static/main.min.js','dist/static/prefixed/style.min.css','dist/static/prefixed/home.min.css'],
+             src: ['dist/static/js/main.min.js','dist/static/prefixed/style.min.css','dist/static/prefixed/home.min.css'],
              dest: 'dist/**/*.html'
         }
      },
