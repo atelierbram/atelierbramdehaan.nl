@@ -22,9 +22,9 @@
     "pretty": "^1.0.0",
     "time-grunt": "^1.0.0",
     "grunt-autoprefixer": "^2.2.0",
-    "grunt-gh-pages": "^0.10.0",
     "grunt-verb": "^0.2.4",
     "handlebars-helper-isactive": "^0.1.1",
-    "handlebars-helper-autolink": "^0.1.1"
+    "handlebars-helper-autolink": "^0.1.1",
+    "grunt-gh-pages": "^0.10.0"
   }
 }
