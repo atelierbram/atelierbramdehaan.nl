@@ -166,7 +166,8 @@ module.exports = function(grunt) {
         options: {
           // base: 'dist',
           // push: false
-          base: 'dist'
+          base: 'dist',
+          add: true
         },
         src: '**/*'
       }
