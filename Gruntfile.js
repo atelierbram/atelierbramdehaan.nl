@@ -34,7 +34,7 @@ module.exports = function(grunt) {
 
       clean: {
           static: ['dist/static/**/*.{css,js}'],
-          html: ['dist/**/*.html', '!dist/google*.html']
+          html: ['dist/**/*.html', '!dist/schilderijen/Slang-Glijbaan.html', '!dist/schilderijen/Nachtdieren-Schommel.html','!dist/schilderijen/Baviaan-Auto.html','!dist/schilderijen/Geit-Gietijzer.html','!dist/schilderijen/Zeepaard-Ruiterstandbeeld.html','!dist/webdesign/typeface-tester-screenshot-header.html','!dist/webdesign/typeface-tester-screenshot-selectmenu.html','!dist/webdesign/typeface-tester-screenshot-footer.html','!dist/webdesign/MassageBron-Beeldlogo.html','!dist/webdesign/MassageBron-Logoheader.html','!dist/webdesign/MassageBron-Screenshot-Info.html','!dist/google*.html']
       },
 
       sass: {
