@@ -3,6 +3,7 @@
     short-title:    Schilderijen
     type:           page
     theme:          gallery
+    page-id:        schilderijen
     description:    Kunst en Cultuur
     sortOrder:      1
 
@@ -34,5 +35,5 @@ olieverf op m.d.f.- paneel
 Zeepaard-Ruiterstandbeeld
 150 x 65 cm
 olieverf op m.d.f.- paneel
-2002 </pre></figcaption></figure></div></div></div>
+2002 </pre></figcaption></figure></div></div>
 
