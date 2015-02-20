@@ -9,7 +9,7 @@
 
 ---
 
-<div class="main-content l-col1 container" role="main"><div class="page clearfix"><h2 id="top" class="entry-title unit-right prm"> Schilderijen </h2><br class="clear" /><ul class="translation"><li class="li-translation first">nederlands</li><li class="li-translation"><a href="{{var.root-url}}/en/paintings/" class="a-translation">english</a></li></ul><div class="line l-gallery"><figure class="unit size1of3 border-box fig-l-gallery odd"><a class="a-img-gallery" href="{{var.root-url}}/schilderijen/Slang-Glijbaan.html"><img src="https://lh6.googleusercontent.com/-orJS7wnULXk/UIpc1zB0jmI/AAAAAAAAAOQ/6B5n8IMQIu4/s800/Slang-Glijbaan-414x498.jpg" alt="Slang en Glijbaan - schilderij van Atelier Bram de Haan" class="img-gallery block"></a><figcaption class="figcap-gallery">
+<div class="main-content l-col1 container" role="main"><div class="page clearfix"><h2 id="top" class="entry-title unit-right prm"> Schilderijen </h2><br class="clear" /><div class="line l-gallery"><figure class="unit size1of3 border-box fig-l-gallery odd"><a class="a-img-gallery" href="{{var.root-url}}/schilderijen/Slang-Glijbaan.html"><img src="https://lh6.googleusercontent.com/-orJS7wnULXk/UIpc1zB0jmI/AAAAAAAAAOQ/6B5n8IMQIu4/s800/Slang-Glijbaan-414x498.jpg" alt="Slang en Glijbaan - schilderij van Atelier Bram de Haan" class="img-gallery block"></a><figcaption class="figcap-gallery">
 <pre class="pre-figcap">
 Slang-Glijbaan
 75 x 65 cm
