@@ -1,0 +1,71 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title :atelier-grey
+ Author : Bram de Haan
+ URL : http://www.atelierbramdehaan.nl
+
+ Last Updated : March 2012
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+/* Logo */
+#logo a { background-image: none; min-height:0; height: 0px; }
+.wufoo {
+ position: relative;
+}
+.wufoo li { width: 55%; padding: 6px 4% 1.7857em 4%; margin-bottom: 1.42857em; border: 1px solid transparent;  border-radius: 3px; }
+
+.wufoo li.focused { border-color: #F7E200; box-shadow: rgba(0,0,0,.5) 2px 3px 6px; }
+.wufoo .instruct { width: 47%;  border:1px solid #ddd; border-right: 1px solid #d5d5d5; border-bottom: 1px solid #ccc; box-shadow: rgba(0,0,0,.5) 2px 3px 6px; }
+
+.wufoo .info, .wufoo .info h2 {  font-size: 1px; color: #fff; border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;   }
+
+/* Typography */
+.wufoo ul li, .wufoo input.text, .wufoo textarea.textarea, .wufoo input.file { font-family: DroidSans,"Lucida Grande","Lucida Sans",Candara,"Trebuchet Ms",Helvetica,sans-serif; }
+.wufoo label.desc, .wufoo legend.desc { font-family: "Lucida Grande","Lucida Sans",Candara,"Trebuchet Ms",Helvetica,sans-serif; }
+#errorLi { width: 58%; margin: 0 auto 1.42857em 0; padding: 1em;  border-radius: 3px; }
+form p.error { font-size: 12px; font-weight: normal; }
+form span.req, #errorMsg b {  color: #d00 !important;  }
+#errorMsg b { display: inline-block; padding: .4em .8em .6em;  border-radius: 3px; font-weight: normal; }
+
+/* button adapted from formalize: http://formalize.me/ */
+.buttons .btTxt {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  background-clip: padding-box;
+  background-color: #ddd;
+  background-image: linear-gradient(#fff, #ddd);
+  border: 1px solid;
+  border-color: #ddd #bbb #999;
+  cursor: pointer;
+  color: #333;
+  font-family: DroidSans-Bold, "Lucida Sans Std", "Lucida Grande", "Lucida Sans", Candara, "Trebuchet Ms", Helvetica, sans-serif;
+  outline: 0;
+  overflow: visible;
+  padding: 3px 10px;
+  text-shadow: #fff 0 1px 1px;
+  width: auto;
+  float: right;
+  margin-right: 36%;
+  box-shadow: rgba(0,0,0,.25) 1px 2px 6px;
+}
+.buttons .btTxt:hover {
+  background-image: linear-gradient(#fff, #eee 1px, #ccc);
+}
+.buttons .btTxt:active {
+  background-image: linear-gradient(#fff, #ddd 1px, #eee);
+  box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
+  border-color: #999 #bbb #ddd;
+}
+/* @media only screen and (min-width: 970px) { */
+.wufoo:after {
+  content: "";
+  position: absolute;
+  height: 160px;
+  width: 161px;
+  top: 4px;
+  right: 0;
+  background-image: url(../../../../img/bg/abdh-v2.png);
+  background-repeat: no-repeat;
+  background-position: -662px -794px;
+}
