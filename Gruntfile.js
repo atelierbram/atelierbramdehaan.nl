@@ -41,6 +41,7 @@ module.exports = function(grunt) {
         dist: {
           files: {
                 'dist/static/css/style.css': 'src/sass/style.scss',
+                'dist/static/css/style-2015.css': 'src/sass/style-2015.scss',
                 'dist/static/css/home.css': 'src/sass/home.scss',
                 'dist/static/css/lib/mobile-custom-v1.css': 'src/sass/lib/mobile-custom-v1.scss',
                 'dist/static/css/lib/wufoo.css': 'src/sass/lib/wufoo.scss'
@@ -58,6 +59,7 @@ module.exports = function(grunt) {
           flatten: true,
           files: {
             'dist/static/prefixed/style.css': 'dist/static/css/style.css',
+            'dist/static/prefixed/style-2015.css': 'dist/static/css/style-2015.css',
             'dist/static/prefixed/home.css': 'dist/static/css/home.css',
             'dist/static/prefixed/mobile-custom-v1.css': 'dist/static/css/lib/mobile-custom-v1.css',
             'dist/static/prefixed/wufoo.css': 'dist/static/css/lib/wufoo.css'
@@ -69,6 +71,7 @@ module.exports = function(grunt) {
         dist: {
           files: {
           'dist/static/prefixed/style.min.css': 'dist/static/prefixed/style.css',
+          'dist/static/prefixed/style-2015.min.css': 'dist/static/prefixed/style-2015.css',
           'dist/static/prefixed/home.min.css': 'dist/static/prefixed/home.css',
           'dist/static/prefixed/mobile-custom-v1.min.css': 'dist/static/prefixed/mobile-custom-v1.css',
           'dist/static/prefixed/wufoo.min.css': 'dist/static/prefixed/wufoo.css'
@@ -127,7 +130,7 @@ module.exports = function(grunt) {
              renameFiles: false
          },
          dist: {
-             src: ['dist/static/js/main.min.js','dist/static/prefixed/style.min.css','dist/static/prefixed/home.min.css'],
+             src: ['dist/static/js/main.min.js','dist/static/prefixed/style.min.css','dist/static/prefixed/style-2015.min.css','dist/static/prefixed/home.min.css'],
              dest: 'dist/**/*.html'
         }
      },

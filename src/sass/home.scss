@@ -1,3 +1,378 @@
-* {
-  outline: 1px dotted green;
+@import "partials/color-vars";
+%visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: inherit;
+}
+body {
+  font: 100%/1.375 $base-fontfamily;
+  position: relative;
+  background-color: $brown;
+  box-sizing: border-box;
+}
+h1 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0;
+  margin-left: 1em;
+}
+a {
+  color: $red;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.box {
+  position: relative;
+  z-index: 1;
+}
+.lt-ie9 .big-icon {
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.lt-ie9 .big-icon svg {
+  display: none;
+}
+.big-icon {
+  max-width: 300px;
+  max-height: 300px;
+  position: absolute;
+  // outline: 1px dotted black;
+  z-index: 2;
+}
+// .lt-ie9 .c-1_big-icon {
+// background-image: url(../img/bg/atelier-logo_300x300.png);
+// }
+// .lt-ie9 .c-2_big-icon {
+// background-image: url(../img/bg/gallery-icon_300x300.png);
+// }
+// .lt-ie9 .c-3_big-icon {
+// background-image: url(../img/bg/webdesign-icon_300x300.png);
+// }
+// .lt-ie9 .c-4_big-icon {
+// background-image: url(../img/bg/contact-icon_300x300.png);
+// }
+.c-1_big-icon,
+.c-3_big-icon {
+  right: 2px;
+}
+.c-1_big-icon,
+.c-2_big-icon {
+  bottom: 2px;
+}
+.c-2_big-icon,
+.c-4_big-icon {
+  left: 2px;
+}
+.c-3_big-icon,
+.c-4_big-icon {
+  top: 2px;
+}
+.c-1 {
+  background-color: $yellow;
+  background: linear-gradient($yellow, $yellow 50%, $brown 50%, $brown);
+  border: 3px solid transparent;
+  border-right-color: #c90;
+  border-bottom-color: lighten($brown,25%);
+  border-top-width: 0;
+  border-left-width: 0;
+  border-bottom-width: 5px;
+}
+.c-1:hover {
+  border-color: darken($brown,5%);
+  border-right-color: darken($brown,2.5%);
+}
+.c-2 {
+  background-color: $red;
+  background: linear-gradient($red, $red 50%, $blue 50%, $blue);
+  border: 3px solid transparent;
+  border-left-color: darken($red,5%);
+  border-bottom-color: darken($red,10%);
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 5px;
+  border-left-width: 5px;
+}
+.c-2:hover {
+  border-color: darken($blue,5%);
+  border-bottom-color: darken($blue,15%);
+}
+.c-3 {
+  background-color: $blue;
+  background: linear-gradient($blue, $blue 50%, $red 50%, $red);
+  border: 3px solid transparent;
+  border-right-color: darken($blue,5%);
+  border-top-color: lighten($blue,12.5%);
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+.c-3:hover {
+  // border-color: darken($red,5%);
+  border-top-color: lighten($red,5%);
+  border-right-color: darken($red,15%);
+}
+.c-4 {
+  background-color: $brown;
+  background: linear-gradient($brown, $brown 50%, $yellow 50%, $yellow);
+  border: 3px solid transparent;
+  border-left-color: darken($brown,5%);
+  border-top-color: lighten($brown,10%);
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 5px;
+}
+.c-4:hover {
+  border-color: #c90;
+  border-left-color: lighten($brown,40%);
+}
+.box {
+  padding: 2em;
+  /* border: 1px solid #ccc; */
+  display: block;
+  width: 50%;
+  min-height: 300px;
+  height: 50%;
+  height: 50vh;
+  float: left;
+  margin: -1px 0 0 -1px;
+  color: #fff;
+  background-size: 100% 202%;
+  transition: all 0.2s ease;
+  animation: down-bump 0.4s ease;
+}
+.box h2 {
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+  padding-top: 1em;
+}
+.box h3 {
+  font: 0.8em "Lucida Grande", Corbel, sans-serif;
+}
+.is-visible:hover,
+.box:hover {
+  background-position: 100% 100%;
+  animation: up-bump 0.4s ease;
+}
+.box:hover h2 {
+  color: #48ad26;
+  color: #6DAE00;
+}
+.box:hover h2 span {
+  color: white;
+}
+.box:hover h3 {
+  color: silver;
+}
+
+@keyframes up-bump {
+  0% { padding-top: 2em; }
+  50% { padding-top: 1.5em; }
+  100% { padding-top: 2em; }
+}
+@keyframes down-bump {
+  0% { padding-top: 2em; }
+  50% { padding-top: 2.5em; }
+  100% { padding-top: 2em; }
+}
+.box p {
+  @extend %visuallyhidden;
+}
+.c-1 p {
+  color: $yellow;
+}
+.c-2 p {
+  color: $red;
+}
+.c-3 p {
+  color: $blue;
+}
+.c-4 p {
+  color: $brown;
+}
+.c-2 p,
+.c-4 p {
+  text-align: right;
+}
+.c-1:hover p {
+  color: $light-yellow;
+}
+.c-2:hover p {
+  /* color: #ffa280 ; */
+  color: $light-red;
+}
+.c-3:hover p {
+  color: $light-blue;
+}
+.c-4:hover p {
+  color: $dark-brown;
+}
+.c-3:hover h2 {
+  color: $yellow;
+}
+.c-4:hover h2 {
+  color: $red;
+}
+.c-4:hover h2 span {
+  color: black;
+}
+.c-4:hover h3 {
+  color: $brown;
+}
+.c-1 {
+  color: black;
+}
+.mt-274 {
+  margin-top: 274px;
+}
+.mt-226 {
+  margin-top: 226px;
+}
+// .c-1:hover #background-color rect { fill: $brown; }
+// SVG hovers
+.is-visible:hover .atelier-name path,
+.c-1:hover .atelier-name path {
+  fill: #fcf5aa;
+}
+.is-visible:hover .atelier-name .atelier-caps path,
+.c-1:hover .atelier-name .atelier-caps path {
+  fill: $yellow;
+}
+
+.is-visible:hover .tagline path,
+.c-1:hover .tagline path {
+  fill: #fff;
+  stroke: #fff;
+}
+.c-2:hover .walls {
+  fill: $red;
+}
+.c-2:hover .side-surface {
+  fill: #fff;
+}
+
+.c-3:hover .monitor-bg {
+  fill: $blue;
+}
+.c-3:hover .power-btn {
+  fill: #fff;
+}
+.c-4:hover .envelop-bg {
+  fill: $brown;
+}
+.c-4:hover .envelop-inner {
+  fill: #fff;
+}
+.is-visible path,
+.is-visible rect,
+.is-visible polygon,
+.box path,
+.box rect,
+.box polygon {
+  transition: fill 1.5s;
+}
+// #323225
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+// .browsehappy {
+//   position: fixed;
+//   top: 0; left: 0;
+//   padding: 1em;
+//   background-color: $red;
+//   // color: $light-red;
+//   z-index: 2;
+// }
+// .browsehappy a {
+//   color: #fff;
+// }
+// .browsehappy a:hover {
+//   text-decoration: underline;
+// }
+
+.logo-top {
+  position: absolute;
+  top:0;right:0;bottom:0;left:0;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  height: 100vh;
+}
+.is-visible {
+  z-index: 9;
+  background-color: $yellow;
+}
+.logo-top:active {
+  background-color: transparent;
+}
+.is-visible {
+  background-color: $yellow; background: linear-gradient($yellow, $yellow 50%, $brown 50%, $brown);
+  padding: 2em;
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+  height: 100vh;
+  background-size: 100% 202%;
+  transition: all 0.2s ease;
+  animation: down-bump 0.4s ease;
+}
+.is-visible svg {
+  max-width: 300px;
+  max-height: 300px;
+  position: absolute;
+  z-index: 14;
+  left: calc(50% - 150px);
+  top: 2em;
+}
+
+@media only screen and (max-width: 620px) {
+  .box {
+    width: 100%;
+    height: 300px;
+  }
+  .big-icon {
+    left: 2px;
+    // left: calc(50% - 150px);
+    right: auto;
+  }
+  .box p,
+  .box h2 {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+}
+
