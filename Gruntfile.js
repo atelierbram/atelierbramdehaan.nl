@@ -78,8 +78,10 @@ module.exports = function(grunt) {
 
       copy: {
         main: {
-          src: 'dist/static/prefixed/home.min.css',
-          dest: 'src/templates/partials/homeheadstyles.hbs',
+        files: {
+          'src/templates/partials/homeheadstyles.hbs' : 'dist/static/prefixed/home.min.css'
+          // ,'src/templates/partials/wufoo-embed-js.hbs' : 'dist/static/js/wufoo-embed.js'
+          },
           flatten: true,
           filter: 'isFile',
         },

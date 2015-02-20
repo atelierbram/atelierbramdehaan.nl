@@ -20,6 +20,7 @@
 {{#is theme "index" }}<body class="index">{{/is}}
 {{#is theme "info" }}<body class="info">{{/is}}
 {{> body }}
+{{#is page-id "contact" }}<script>{{> wufoo-embed-js}}</script>{{/is}}
 {{#is type "page" }}<script src="{{assets}}/js/main.min.js"></script>{{/is}}
 </body>
 </html>
