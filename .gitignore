@@ -21,6 +21,8 @@ release
 dist
 vector
 _patternlab
+_test
+_vector
 
 TODO.md
 

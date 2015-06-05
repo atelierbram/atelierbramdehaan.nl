@@ -38,10 +38,7 @@ img {
   display: block;
   margin: 0 auto;
 }
-.box {
-  position: relative;
-  z-index: 1;
-}
+
 .lt-ie9 .big-icon {
   width: 300px;
   height: 300px;
@@ -54,9 +51,10 @@ img {
 .big-icon {
   max-width: 300px;
   max-height: 300px;
-  position: absolute;
+  position: relative;
   // outline: 1px dotted black;
   z-index: 2;
+  margin: 0 auto;
 }
 // .lt-ie9 .c-1_big-icon {
 // background-image: url(../img/bg/atelier-logo_300x300.png);
@@ -89,62 +87,63 @@ img {
 .c-1 {
   background-color: $yellow;
   background: linear-gradient($yellow, $yellow 50%, $brown 50%, $brown);
-  border: 3px solid transparent;
-  border-right-color: #c90;
-  border-bottom-color: lighten($brown,25%);
-  border-top-width: 0;
-  border-left-width: 0;
-  border-bottom-width: 5px;
+  // border: 1px solid transparent;
+  // border-right-color: #c90;
+  // border-bottom-color: lighten($brown,25%);
+  // border-top-width: 0;
+  // border-left-width: 0;
+  // border-bottom-width: 5px;
 }
-.c-1:hover {
-  border-color: darken($brown,5%);
-  border-right-color: darken($brown,2.5%);
-}
+// .c-1:hover {
+//   border-color: darken($brown,5%);
+//   border-right-color: darken($brown,2.5%);
+// }
 .c-2 {
   background-color: $red;
   background: linear-gradient($red, $red 50%, $blue 50%, $blue);
-  border: 3px solid transparent;
-  border-left-color: darken($red,5%);
-  border-bottom-color: darken($red,10%);
-  border-top-width: 0;
-  border-right-width: 0;
-  border-bottom-width: 5px;
-  border-left-width: 5px;
+  // border: 1px solid transparent;
+  // border-left-color: darken($red,5%);
+  // border-bottom-color: darken($red,10%);
+  // border-top-width: 0;
+  // border-right-width: 0;
+  // border-bottom-width: 5px;
+  // border-left-width: 5px;
 }
-.c-2:hover {
-  border-color: darken($blue,5%);
-  border-bottom-color: darken($blue,15%);
-}
+// .c-2:hover {
+//   border-color: darken($blue,5%);
+//   border-bottom-color: darken($blue,15%);
+// }
 .c-3 {
   background-color: $blue;
   background: linear-gradient($blue, $blue 50%, $red 50%, $red);
-  border: 3px solid transparent;
-  border-right-color: darken($blue,5%);
-  border-top-color: lighten($blue,12.5%);
-  border-bottom-width: 0;
-  border-left-width: 0;
+  // border: 1px solid transparent;
+  // border-right-color: darken($blue,5%);
+  // border-top-color: lighten($blue,12.5%);
+  // border-bottom-width: 0;
+  // border-left-width: 0;
 }
-.c-3:hover {
-  // border-color: darken($red,5%);
-  border-top-color: lighten($red,5%);
-  border-right-color: darken($red,15%);
-}
+// .c-3:hover {
+// border-color: darken($red,5%);
+//   border-top-color: lighten($red,5%);
+//   border-right-color: darken($red,15%);
+// }
 .c-4 {
   background-color: $brown;
   background: linear-gradient($brown, $brown 50%, $yellow 50%, $yellow);
-  border: 3px solid transparent;
-  border-left-color: darken($brown,5%);
-  border-top-color: lighten($brown,10%);
-  border-right-width: 0;
-  border-bottom-width: 0;
-  border-left-width: 5px;
+  // border: 1px solid transparent;
+  // border-left-color: darken($brown,5%);
+  // border-top-color: lighten($brown,10%);
+  // border-right-width: 0;
+  // border-bottom-width: 0;
+  // border-left-width: 5px;
 }
-.c-4:hover {
-  border-color: #c90;
-  border-left-color: lighten($brown,40%);
-}
+// .c-4:hover {
+//   border-color: #c90;
+//   border-left-color: lighten($brown,40%);
+// }
 .box {
-  padding: 2em;
+  position: relative;
+  z-index: 1;
   /* border: 1px solid #ccc; */
   display: block;
   width: 50%;
@@ -170,7 +169,7 @@ img {
 .is-visible:hover,
 .box:hover {
   background-position: 100% 100%;
-  animation: up-bump 0.4s ease;
+  // animation: up-bump 0.4s ease;
 }
 .box:hover h2 {
   color: #48ad26;
@@ -183,15 +182,15 @@ img {
   color: silver;
 }
 
-@keyframes up-bump {
-  0% { padding-top: 2em; }
-  50% { padding-top: 1.5em; }
-  100% { padding-top: 2em; }
-}
+// @keyframes up-bump {
+//   0% { padding-top: calc(50vh - 390px); }
+//   50% { padding-top: calc(50vh - 394px); }
+//   100% { padding-top: calc(50vh - 390px); }
+// }
 @keyframes down-bump {
-  0% { padding-top: 2em; }
-  50% { padding-top: 2.5em; }
-  100% { padding-top: 2em; }
+  0% { padding-top: calc(50vh - 390px); }
+  50% { padding-top: calc(50vh - 386px); }
+  100% { padding-top: calc(50vh - 390px); }
 }
 .box p {
   @extend %visuallyhidden;
@@ -301,20 +300,6 @@ img {
   position: absolute;
   width: 1px;
 }
-// .browsehappy {
-//   position: fixed;
-//   top: 0; left: 0;
-//   padding: 1em;
-//   background-color: $red;
-//   // color: $light-red;
-//   z-index: 2;
-// }
-// .browsehappy a {
-//   color: #fff;
-// }
-// .browsehappy a:hover {
-//   text-decoration: underline;
-// }
 
 .logo-top {
   position: absolute;
@@ -341,7 +326,7 @@ img {
   height: 100vh;
   background-size: 100% 202%;
   transition: all 0.2s ease;
-  animation: down-bump 0.4s ease;
+  animation: down-bump 0.3s ease;
 }
 .is-visible svg {
   max-width: 300px;
@@ -358,8 +343,8 @@ img {
     height: 300px;
   }
   .big-icon {
+    position: absolute;
     left: 2px;
-    // left: calc(50% - 150px);
     right: auto;
   }
   .box p,
@@ -375,4 +360,10 @@ img {
   }
 
 }
+@media only screen and (min-width: 620px) {
+  .box {
+    padding-top: calc(50vh - 390px);
+  }
+}
+
 
