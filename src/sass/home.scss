@@ -1,4 +1,5 @@
 @import "partials/color-vars";
+$base-fontfamily: sans-serif;
 %visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -152,7 +153,7 @@ img {
   height: 50vh;
   float: left;
   margin: -1px 0 0 -1px;
-  color: #fff;
+  color: $base07;
   background-size: 100% 202%;
   transition: all 0.2s ease;
   animation: down-bump 0.4s ease;
@@ -247,38 +248,52 @@ img {
 }
 // .c-1:hover #background-color rect { fill: $brown; }
 // SVG hovers
+// .is-visible:hover .atelier-logo path,
+// .c-1:hover .atelier-logo path {
+//   fill: #fcf5aa;
+// }
 .is-visible:hover .atelier-name path,
 .c-1:hover .atelier-name path {
-  fill: #fcf5aa;
+  // fill: #fdf7ba;
+  fill: $base06;
+  stroke: transparent;
 }
-.is-visible:hover .atelier-name .atelier-caps path,
-.c-1:hover .atelier-name .atelier-caps path {
-  fill: $yellow;
+.is-visible:hover .bram-name path,
+.c-1:hover .bram-name path {
+  // fill: #fdf9ce;
+  fill: $base06;
+  stroke: transparent;
 }
+// .is-visible:hover .atelier-name .atelier-caps path,
+// .c-1:hover .atelier-name .atelier-caps path {
+//   fill: $yellow;
+// }
 
 .is-visible:hover .tagline path,
 .c-1:hover .tagline path {
-  fill: #fff;
-  stroke: #fff;
+  // fill: #fefbe2;
+  fill: $base07;
+  // stroke: #fefbe2;
+  stroke: $base07;
 }
 .c-2:hover .walls {
   fill: $red;
 }
 .c-2:hover .side-surface {
-  fill: #fff;
+  fill: $base07;
 }
 
 .c-3:hover .monitor-bg {
   fill: $blue;
 }
 .c-3:hover .power-btn {
-  fill: #fff;
+  fill: $base07;
 }
 .c-4:hover .envelop-bg {
   fill: $brown;
 }
 .c-4:hover .envelop-inner {
-  fill: #fff;
+  fill: $base07;
 }
 .is-visible path,
 .is-visible rect,
