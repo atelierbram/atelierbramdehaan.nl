@@ -20,7 +20,7 @@ $base-fontfamily: sans-serif;
 body {
   font: 100%/1.375 $base-fontfamily;
   position: relative;
-  background-color: $brown;
+  background-color: $base00;
   box-sizing: border-box;
 }
 h1 {
@@ -86,18 +86,18 @@ img {
   top: 2px;
 }
 .c-1 {
-  background-color: $yellow;
-  background: linear-gradient($yellow, $yellow 50%, $brown 50%, $brown);
+  background-color: $yellow-light;
+  background: linear-gradient($yellow-light, $yellow-light 50%, $base00 50%, $base00);
   // border: 1px solid transparent;
   // border-right-color: #c90;
-  // border-bottom-color: lighten($brown,25%);
+  // border-bottom-color: lighten($base00,25%);
   // border-top-width: 0;
   // border-left-width: 0;
   // border-bottom-width: 5px;
 }
 // .c-1:hover {
-//   border-color: darken($brown,5%);
-//   border-right-color: darken($brown,2.5%);
+//   border-color: darken($base00,5%);
+//   border-right-color: darken($base00,2.5%);
 // }
 .c-2 {
   background-color: $red;
@@ -129,18 +129,18 @@ img {
 //   border-right-color: darken($red,15%);
 // }
 .c-4 {
-  background-color: $brown;
-  background: linear-gradient($brown, $brown 50%, $yellow 50%, $yellow);
+  background-color: $base00;
+  background: linear-gradient($base00, $base00 50%, $yellow-light 50%, $yellow-light);
   // border: 1px solid transparent;
-  // border-left-color: darken($brown,5%);
-  // border-top-color: lighten($brown,10%);
+  // border-left-color: darken($base00,5%);
+  // border-top-color: lighten($base00,10%);
   // border-right-width: 0;
   // border-bottom-width: 0;
   // border-left-width: 5px;
 }
 // .c-4:hover {
 //   border-color: #c90;
-//   border-left-color: lighten($brown,40%);
+//   border-left-color: lighten($base00,40%);
 // }
 .box {
   position: relative;
@@ -206,24 +206,24 @@ img {
   color: $blue;
 }
 .c-4 p {
-  color: $brown;
+  color: $base00;
 }
 .c-2 p,
 .c-4 p {
   text-align: right;
 }
 .c-1:hover p {
-  color: $light-yellow;
+  color: $yellow-light;
 }
 .c-2:hover p {
   /* color: #ffa280 ; */
-  color: $light-red;
+  color: $red-light;
 }
 .c-3:hover p {
-  color: $light-blue;
+  color: $blue-light;
 }
 .c-4:hover p {
-  color: $dark-brown;
+  color: $base00;
 }
 .c-3:hover h2 {
   color: $yellow;
@@ -235,7 +235,7 @@ img {
   color: black;
 }
 .c-4:hover h3 {
-  color: $brown;
+  color: $base00;
 }
 .c-1 {
   color: black;
@@ -246,7 +246,7 @@ img {
 .mt-226 {
   margin-top: 226px;
 }
-// .c-1:hover #background-color rect { fill: $brown; }
+// .c-1:hover #background-color rect { fill: $base00; }
 // SVG hovers
 // .is-visible:hover .atelier-logo path,
 // .c-1:hover .atelier-logo path {
@@ -290,7 +290,7 @@ img {
   fill: $base07;
 }
 .c-4:hover .envelop-bg {
-  fill: $brown;
+  fill: $base00;
 }
 .c-4:hover .envelop-inner {
   fill: $base07;
@@ -326,13 +326,13 @@ img {
 }
 .is-visible {
   z-index: 9;
-  background-color: $yellow;
+  background-color: $yellow-light;
 }
 .logo-top:active {
   background-color: transparent;
 }
 .is-visible {
-  background-color: $yellow; background: linear-gradient($yellow, $yellow 50%, $brown 50%, $brown);
+  background-color: $yellow-light; background: linear-gradient($yellow-light, $yellow-light 50%, $base00 50%, $base00);
   padding: 2em;
   display: block;
   width: 100%;
