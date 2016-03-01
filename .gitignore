@@ -1,3 +1,4 @@
+.DS_Store
 lib-cov
 *.seed
 *.log
@@ -20,6 +21,7 @@ release
 /temp/
 dist
 vector
+_
 _patternlab
 _test
 _vector
