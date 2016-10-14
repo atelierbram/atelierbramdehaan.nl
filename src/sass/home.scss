@@ -69,12 +69,13 @@ img {
 // background-image: url(../img/bg/contact-icon_300x300.png);
 // }
 .c-1_big-icon {
-  right: -24px;
+  right: -5px;
+  bottom: -4em;
 }
 .c-3_big-icon {
   right: 2px;
 }
-.c-1_big-icon,
+// .c-1_big-icon,
 .c-2_big-icon {
   bottom: 2px;
 }
@@ -204,16 +205,36 @@ img {
 .mt-226 {
   margin-top: 226px;
 }
-.is-visible:hover .atelier-name path,
-.c-1:hover .atelier-name path {
-  fill: adjust-color($base06,$lightness:-15%);
+.is-visible:hover [id="atelier-name"] path,
+.c-1:hover [id="atelier-name"] path,
+.is-visible:hover [id="logo"] polygon,
+.c-1:hover [id="logo"] polygon {
+// .is-visible:hover [id="bram-name"] path,
+// .c-1:hover [id="bram-name"] path {
+  fill: adjust-color($yellow, $lightness: 42%);
   stroke: transparent;
 }
-.is-visible:hover .bram-name path,
-.c-1:hover .bram-name path {
-  fill:  adjust-color($base06,$lightness:-10%);
+.is-visible:hover [id="bram-name"] path,
+.c-1:hover [id="bram-name"] path {
+  fill: #fff;
   stroke: transparent;
 }
+
+.is-visible:hover [id="logo"] path,
+.c-1:hover [id="logo"] path {
+  fill: $dark-brown;
+  stroke: transparent;
+}
+.is-visible:hover [id="logo"] rect,
+.c-1:hover [id="logo"] rect {
+  fill: $red;
+  stroke: transparent;
+}
+// .is-visible:hover [id="bram-name"] path,
+// .c-1:hover [id="bram-name"] path {
+//   fill:  adjust-color($base06,$lightness:-10%);
+//   stroke: transparent;
+// }
 
 .is-visible:hover .tagline path,
 .c-1:hover .tagline path {
@@ -258,7 +279,7 @@ img {
   padding: 0;
   position: absolute;
   width: 1px;
-} 
+}
 .logo-top {
   position: absolute;
   top:0;right:0;bottom:0;left:0;
@@ -267,13 +288,16 @@ img {
   height: 100%;
   height: 100vh;
 }
+
 .is-visible {
   z-index: 9;
   background-color: $yellow-light;
 }
+
 .logo-top:active {
   background-color: transparent;
 }
+
 .is-visible {
   background-color: $yellow-light; background: linear-gradient($yellow-light, $yellow-light 50%, $base00 50%, $base00);
   padding: 2em;
@@ -286,12 +310,15 @@ img {
   transition: all 0.2s ease;
   animation: down-bump 0.3s ease;
 }
+
 .is-visible svg {
-  max-width: 300px;
-  max-height: 300px;
+  // max-width: 300px;
+  // max-height: 300px;
+  max-width: 80%;
   position: absolute;
   z-index: 14;
-  left: calc(50% - 150px);
+  // left: calc(50% - 150px);
+  left: 10%;
   top: 2em;
 }
 
