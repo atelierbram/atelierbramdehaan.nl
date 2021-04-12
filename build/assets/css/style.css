@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body:before {
+.env-dev body:before {
   background-color: #FCF8E3;
   border-bottom: 1px solid #FBEED5;
   border-left: 1px solid #FBEED5;
@@ -12,28 +12,28 @@ body:before {
   bottom: 0;
   z-index: 100; }
   @media (min-width: 20em) {
-    body:before {
+    .env-dev body:before {
       content: "mobile ≥ 320px (20em)"; } }
   @media (min-width: 31.25em) {
-    body:before {
+    .env-dev body:before {
       content: "phablet ≥ 500px (31.25em)"; } }
   @media (min-width: 46.25em) {
-    body:before {
+    .env-dev body:before {
       content: "tablet ≥ 740px (46.25em)"; } }
   @media (min-width: 53.75em) {
-    body:before {
+    .env-dev body:before {
       content: "tablet-l ≥ 860px (53.75em)"; } }
   @media (min-width: 61.25em) {
-    body:before {
+    .env-dev body:before {
       content: "desktop ≥ 980px (61.25em)"; } }
   @media (min-width: 76.5em) {
-    body:before {
+    .env-dev body:before {
       content: "desktop-l ≥ 1224px (76.5em)"; } }
   @media (min-width: 81.25em) {
-    body:before {
+    .env-dev body:before {
       content: "wide ≥ 1300px (81.25em)"; } }
   @media (min-width: 100em) {
-    body:before {
+    .env-dev body:before {
       content: "wide-l ≥ 1600px (100em)"; } }
 
 h1,
