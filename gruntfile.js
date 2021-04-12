@@ -138,10 +138,11 @@ module.exports = function(grunt) {
         },
         files: {
           'docs/index.html': 'build/html/index.html',
-          'docs/webdesign/steunpunt-vluchtelingen-de-bilt/index.html': 'build/html/webdesign/steunpunt-vluchtelingen-de-bilt/index.html',
-          'docs/webdesign/mediatheek-steunpunt-vluchtelingen-de-bilt/index.html': 'build/html/webdesign/mediatheek-steunpunt-vluchtelingen-de-bilt/index.html',
-          'docs/webdesign/friends-of-light/index.html': 'build/html/webdesign/friends-of-light/index.html',
-          'docs/webdesign/ancestral-health/index.html': 'build/html/webdesign/ancestral-health/index.html'
+          'docs/contact/index.html': 'build/html/contact/index.html',
+          // 'docs/webdesign/steunpunt-vluchtelingen-de-bilt/index.html': 'build/html/webdesign/steunpunt-vluchtelingen-de-bilt/index.html',
+          // 'docs/webdesign/mediatheek-steunpunt-vluchtelingen-de-bilt/index.html': 'build/html/webdesign/mediatheek-steunpunt-vluchtelingen-de-bilt/index.html',
+          // 'docs/webdesign/friends-of-light/index.html': 'build/html/webdesign/friends-of-light/index.html',
+          // 'docs/webdesign/ancestral-health/index.html': 'build/html/webdesign/ancestral-health/index.html'
         }
       }
     }
