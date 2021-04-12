@@ -77,11 +77,11 @@ body:before {
 
 .frontpage.is-loaded .site {
   position: relative;
-  background-image: linear-gradient(to bottom, #d8e1ee, #d8e1ee 120px, rgba(216, 225, 238, 0) 120px, rgba(216, 225, 238, 0)), url(http://localhost/~bram/atelierbramdehaan.nl/docs/assets/img/svg/screen-monitor-tablet-phone_860x620.svg);
+  background-image: linear-gradient(to bottom, #d8e1ee, #d8e1ee 120px, rgba(216, 225, 238, 0) 120px, rgba(216, 225, 238, 0)), url(https://atelierbramdehaan.nl/assets/img/svg/screen-monitor-tablet-phone_860x620.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: center, center 32px; }
 
 .frontpage.theme-dark.is-loaded .site {
-  background-image: linear-gradient(to bottom, #202731, #202731 120px, rgba(32, 39, 49, 0) 120px, rgba(216, 225, 238, 0)), url(http://localhost/~bram/atelierbramdehaan.nl/docs/assets/img/svg/screen-monitor-tablet-phone-darkmode_860x620.svg); }
+  background-image: linear-gradient(to bottom, #202731, #202731 120px, rgba(32, 39, 49, 0) 120px, rgba(216, 225, 238, 0)), url(https://atelierbramdehaan.nl/assets/img/svg/screen-monitor-tablet-phone-darkmode_860x620.svg); }
 
 /*# sourceMappingURL=frontpage.css.map */

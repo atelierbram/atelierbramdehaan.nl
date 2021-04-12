@@ -51,56 +51,56 @@ h2 {
 
 @font-face {
   font-family: "brandosans-regular-v100";
-  src: url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando-sans/brandosans-regular-v100.woff2") format("woff2"), url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando-sans/brandosans-regular-v100.woff") format("woff");
+  src: url("https://atelierbramdehaan.nl/assets/fonts/brando-sans/brandosans-regular-v100.woff2") format("woff2"), url("https://atelierbramdehaan.nl/assets/fonts/brando-sans/brandosans-regular-v100.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "brandosans-italic-v100";
-  src: url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando-sans/brandosans-regularitalic-v100.woff2") format("woff2"), url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando-sans/brandosans-regularitalic-v100.woff") format("woff");
+  src: url("https://atelierbramdehaan.nl/assets/fonts/brando-sans/brandosans-regularitalic-v100.woff2") format("woff2"), url("https://atelierbramdehaan.nl/assets/fonts/brando-sans/brandosans-regularitalic-v100.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "brandosans-semibold-v100";
-  src: url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando-sans/brandosans-semibold-v100.woff2") format("woff2"), url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando-sans/brandosans-semibold-v100.woff") format("woff");
+  src: url("https://atelierbramdehaan.nl/assets/fonts/brando-sans/brandosans-semibold-v100.woff2") format("woff2"), url("https://atelierbramdehaan.nl/assets/fonts/brando-sans/brandosans-semibold-v100.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "brandosans-semibolditalic-v100";
-  src: url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando-sans/brandosans-semibolditalic-v100.woff2") format("woff2"), url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando-sans/brandosans-semibolditalic-v100.woff") format("woff");
+  src: url("https://atelierbramdehaan.nl/assets/fonts/brando-sans/brandosans-semibolditalic-v100.woff2") format("woff2"), url("https://atelierbramdehaan.nl/assets/fonts/brando-sans/brandosans-semibolditalic-v100.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Brando ExtraLight";
-  src: url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando/brando-extralight.woff2") format("woff2"), url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando/brando-extralight.woff") format("woff");
+  src: url("https://atelierbramdehaan.nl/assets/fonts/brando/brando-extralight.woff2") format("woff2"), url("https://atelierbramdehaan.nl/assets/fonts/brando/brando-extralight.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: Brando;
-  src: url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando/brando-regular.woff2") format("woff2"), url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando/brando-regular.woff") format("woff");
+  src: url("https://atelierbramdehaan.nl/assets/fonts/brando/brando-regular.woff2") format("woff2"), url("https://atelierbramdehaan.nl/assets/fonts/brando/brando-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Brando Light";
-  src: url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando/brando-light.woff2") format("woff2"), url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando/brando-light.woff") format("woff");
+  src: url("https://atelierbramdehaan.nl/assets/fonts/brando/brando-light.woff2") format("woff2"), url("https://atelierbramdehaan.nl/assets/fonts/brando/brando-light.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: BrandoSansLight;
-  src: url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando-sans/brandosans-light.woff2") format("woff2"), url("http://localhost/~bram/atelierbramdehaan.nl/docs/assets/fonts/brando-sans/brandosans-light.woff") format("woff");
+  src: url("https://atelierbramdehaan.nl/assets/fonts/brando-sans/brandosans-light.woff2") format("woff2"), url("https://atelierbramdehaan.nl/assets/fonts/brando-sans/brandosans-light.woff") format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap; }
@@ -823,7 +823,7 @@ a {
       color: #996300; }
   .theme-dark .site-header .logo {
     color: #b28c34;
-    background-image: url(http://localhost/~bram/atelierbramdehaan.nl/docs/assets/img/svg/abdh-redesign-logo-8-inverted_168x60.svg);
+    background-image: url(https://atelierbramdehaan.nl/assets/img/svg/abdh-redesign-logo-8-inverted_168x60.svg);
     background-position: center top;
     background-repeat: no-repeat;
     min-height: 95px; }
