@@ -103,22 +103,12 @@ $bbgd: adjust-color($o3,$saturation: 5%);
   }
 
   &_text {
-    // max-width: 40.5rem; // 648px
-    // max-width: 54rem; // 648px
     max-width: 42rem; // 648px
     line-height: 1.5;
-    // color: $dd7;
-
-    // @supports (font-variation-settings: 'wdth' 200) {
-    //   font-variation-settings: "wght" 525;
-    // }
-
   }
 
   .theme-dark & {
     &_title {
-      // letter-spacing: .75px;
-      // letter-spacing: 0.046875rem;
       color: $dd11;
     }
     &_text {
