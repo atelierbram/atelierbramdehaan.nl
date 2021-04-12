@@ -8,14 +8,14 @@
     <link rel="author" href="https://atelierbramdehaan.nl">
     <?php if ($id == "siteIndex"): ?>
     <style><?php include "inc/critical.css.inc"; ?></style>
-    <link rel="stylesheet" href="<?= $assetPath; ?>css/frontpage.min.css?v1" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="<?= $assetPath; ?>css/frontpage.min.css?v2" media="print" onload="this.media='all'">
     <?php elseif ($type == "landing-page"): ?>
     <style><?php include "../inc/critical.css.inc"; ?></style>
     <?php else: ?>
     <style><?php include "../../inc/critical.css.inc"; ?></style>
     <?php endif ?>
-    <link rel="stylesheet" href="<?= $assetPath; ?>css/style.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="<?= $assetPath; ?>css/style.min.css"></noscript>
+    <link rel="stylesheet" href="<?= $assetPath; ?>css/style.min.css?v2" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="<?= $assetPath; ?>css/style.min.css?v2"></noscript>
     <?php if ($id == "siteIndex"): ?>
     <script><?php include "inc/head-detect.js.inc"; ?></script>
     <?php elseif ($type == "landing-page"): ?>
