@@ -1,0 +1,103 @@
+.vs-display {
+  &_image {
+    background-color: $o20;
+    border-radius: 0.5rem;
+    margin-top: 2.25rem;
+
+    // &_img {
+    //   border-radius: 3px;
+    // }
+
+  }
+  .theme-dark & {
+    &_image {
+      background-color: $o5;
+    }
+    &_img {
+      opacity: .95;
+    }
+  }
+
+  &_desktop_image {
+    // padding: 2.25rem; // 36px;
+    padding: 3.57143%;
+    border-radius: 0.5rem;
+    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1008' height='611' viewBox='0 0 1008 611'%3E%3Cpath d='M986.5 0H21.5C9.7 0 0 9.7 0 21.5v568.1C0 601.3 9.7 611 21.5 611h965.1c11.8 0 21.5-9.7 21.5-21.5V21.5C1008 9.7 998.3 0 986.5 0zM972 576l-936-1V36h936V576z' fill='%23DCD8D1'/%3E%3C/svg%3E");
+    // min-height: 612px;
+    @include mq($from: tablet) {
+      border-radius: .75rem;
+    }
+  }
+
+  &_header_title {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    letter-spacing: .025em;
+    color: $o14;
+
+    @supports (font-variation-settings: 'wdth' 200) {
+      font-variation-settings: "wght" 350,"wdth" 85;
+    }
+  }
+
+  .theme-dark & {
+    &_header_title {
+      color: $o11;
+      letter-spacing: .05em;
+
+      // @supports (font-variation-settings: 'wdth' 200) {
+      //   font-variation-settings: "wght" 350,"wdth" 85;
+      // }
+    }
+  }
+
+  &_mobile {
+    padding-top: .85rem;
+
+    @include mq($from: tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .is-loading & {
+    &_desktop_image {
+      padding-bottom: 59.7561%;
+    }
+  }
+
+  &_tablet {
+    @include mq($from: tablet) {
+      float: left;
+      width: 64.28571%;
+    }
+  }
+
+  &_tablet_image {
+    // padding: 46px 7.09877%;
+    padding: 7.09877%;
+  }
+
+  &_tablet_image,
+  &_phone_image {
+    border-radius: 1.5rem;
+  }
+
+  &_phone {
+    max-width: 264px;
+
+    @include mq($from: tablet) {
+      float: right;
+      max-width: 100%;
+      width: 28.57143%;
+    }
+
+  }
+
+  &_phone_image {
+    // padding: 46px 16px;
+    // padding: 46px 5.55555%;
+    padding: 15.97222% 5.55555%;
+  }
+
+}

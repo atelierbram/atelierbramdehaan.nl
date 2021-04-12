@@ -1,0 +1,220 @@
+.site {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 4em;
+  // padding-left: 2em;
+  // padding-right: 2em;
+
+  // @include mq($from: phablet) {
+  //   padding-left: 3em;
+  //   padding-right: 3em;
+  // }
+  // @include mq($from: tablet) {
+  //   padding-left: 4em;
+  //   padding-right: 4em;
+  // }
+  // @include mq($from: tablet-l) {
+  //   padding-left: 5em;
+  //   padding-right: 5em;
+  // }
+  // @include mq($from: desktop) {
+  //   padding-left: 6em;
+  //   padding-right: 6em;
+  // }
+  @include mq($from: phablet) {
+    max-width: 75em;
+    // margin: 0 auto 0 0;
+    margin-right: auto;
+  }
+}
+.container {
+  padding-left: 2em;
+  padding-right: 2em;
+
+  @include mq($from: phablet) {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  @include mq($from: tablet) {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  @include mq($from: tablet-l) {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  @include mq($from: desktop) {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+}
+
+// .container {
+//   padding-left: 8%;
+//   padding-right: 8%;
+// }
+
+
+.gallery {
+
+  &_list {
+    max-width: 18em; // 288px
+
+    @include mq($from: tablet-l) {
+      max-width: 40.5em; // 648px
+    }
+    @include mq($from: desktop-l) {
+      max-width: 100%;
+    }
+  }
+
+  &_module {
+    // width: 33.33335%;
+    // margin-right: 2.25em;
+    // margin-left: 2.25em;
+    @include mq($from: tablet-l) {
+      display: inline-block;
+    }
+    @include mq($from: desktop-l) {
+      margin-right: 3.57142%;
+      margin-left: 3.57142%;
+    }
+  }
+
+  &_module_header {
+    p {
+      padding: .65rem 0 0;
+      line-height: 1;
+      color: $d12;
+    }
+
+    .theme-dark & {
+      p {
+        color: $d11;
+      }
+      p,
+      h3 {
+        // letter-spacing: .75px;
+        // word-spacing: .025em;
+        font-weight: 300;
+      }
+    }
+  }
+
+  &_module_header_title {
+    color: $d6;
+    padding: .5em 0 1.4em;
+
+    .theme-dark & {
+      color: $d16;
+    }
+  }
+
+  &_module_media {
+    display: block;
+
+    a {
+      display: block;
+
+      @include mq($from: tablet-l) {
+        display: inline-block;
+      }
+      &:hover {
+        img {
+          filter: grayscale(0);
+        }
+      }
+
+    }
+  }
+
+  &_module_image {
+    filter: grayscale(1);
+    transition: all .3s;
+
+    .theme-dark & {
+      filter: grayscale(1) brightness(0.95);
+    }
+
+    @include mq($until: tablet-l) {
+      width: 100%;
+    }
+  }
+
+  &_module_content {
+    opacity: 0;
+    padding: 0;
+    font-size: 0;
+  }
+
+  @include mq($from: tablet-l) {
+    &_module:nth-of-type(odd) {
+      margin-right: 72px;
+    }
+  }
+
+  @include mq($from: desktop-l) {
+    &_module:nth-of-type(odd) {
+      margin-right: 3.57142%;
+    }
+    &_module:nth-of-type(3n+1) {
+      margin-left: 0;
+      // background-color: $D23;
+    }
+
+    &_module:nth-of-type(3n) {
+      margin-right: 0;
+      // background-color: $A23;
+    }
+  }
+
+}
+
+.gallery_module_media-painting {
+  padding-top: 1.45rem;
+  margin-bottom: 2.125rem;
+}
+
+// .page-type-index .gallery_module_header_title {
+//   padding: .5em 0 1.4em;
+// }
+
+// .page-type-landing-page .gallery_module_header_title {
+//   padding: .5em 0;
+// }
+
+
+@supports (display:grid) {
+
+  .gallery {
+
+    &_list {
+      @include mq($from: tablet-l) {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(18em, 1fr)); // 20em = 288px
+        grid-column-gap: 4.5rem;
+        // grid-row-gap: 4.5rem;
+        grid-row-gap: 3rem;
+      }
+    }
+
+    &_module:nth-of-type(odd) {
+      @include mq($from: tablet-l) {
+        margin-right: 0;
+      }
+    }
+
+    &_module {
+      @include mq($from: tablet-l) {
+        margin-top: 0 !important;
+      }
+      @include mq($from: desktop-l) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+
+
+  }
+
+}

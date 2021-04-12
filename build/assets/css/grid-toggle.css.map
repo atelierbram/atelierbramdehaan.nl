@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "grid-toggle.css",
+	"sources": [
+		"../../../src/assets/sass/modules/grid-toggle.scss",
+		"../../../src/colorscheme/assets/sass/palette/master-palette-24-hues.scss",
+		"../../../src/colorscheme/assets/sass/palette/monochrome-palette-24-hues.scss",
+		"../../../src/assets/sass/variables/_variables.scss",
+		"../../../src/assets/sass/variables/_animation.scss"
+	],
+	"names": [],
+	"mappings": "AAKC,AAAA,YAAY,CAAC;EAEZ,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,WAAW;EACpB,gBAAgB,EAAE,WAAW;EAC7B,KAAK,EE6XD,OAAkB;EF5XtB,MAAM,EAAE,IAAI,GAKb;EAHC,AAAA,WAAW,CARZ,YAAY,CAQG;IACZ,KAAK,EEkXJ,OAAkB,GFjXpB;;AAGH,AAAA,YAAY,AAAA,MAAM,CAAC;EACjB,MAAM,EAAE,OAAO,GAChB;;AAED,AAAA,gBAAgB,AAAA,KAAK,CAAC;EACpB,gBAAgB,EAAE,+iBAA+iB;EACjkB,iBAAiB,EAAE,MAAM;EACzB,mBAAmB,EAAE,GAAG,GACzB;;AAED,AAAA,gBAAgB,CAAC,CAAC,CAAE;EAElB,OAAO,EAAE,GAAG,CAAC,MAAM,CAAC,uBAAwB;EAC5C,OAAO,EAAE,GAAG,GACb;;AAED,AAAA,YAAY,CAAC,UAAU;AACvB,mBAAmB,CAAC,UAAU,CAAC;EAC7B,OAAO,EAAE,IAAI,GACd;;AAED,AAAA,mBAAmB,CAAC,UAAU,CAAC;EAC7B,OAAO,EAAE,YAAY,GACtB"
+}

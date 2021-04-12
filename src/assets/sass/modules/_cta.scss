@@ -1,0 +1,52 @@
+// * {
+//   outline: 1px dotted salmon;
+// }
+.cta {
+  background-color: $D21;
+  background-image: linear-gradient(to right,$D22,$D21 75%,$D20);
+  @include mq($until: phablet) {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 1.75rem 2rem .5rem;
+  }
+  @include mq($from: phablet) {
+    display: inline-block;
+    padding: 3rem;
+    transform: rotate(-6deg);
+    border-radius: 3px;
+    transform: rotate(-4deg);
+    box-shadow: 2px 6px 14px rgba($d12,.5);
+    h3 {
+      color: $D4;
+    }
+    p {
+      color: $D2;
+    }
+
+    .theme-dark & {
+      box-shadow: 2px 6px 14px $o1;
+
+      h3,
+      p {
+        letter-spacing: 0;
+        word-spacing: 0;
+      }
+
+      .article-intro_text {
+        font-weight: 400;
+        font-variation-settings: "wght" 525;
+        a {
+          color: $O2;
+          &:hover {
+            color: $O4;
+          }
+        }
+      }
+    }
+  }
+  @include mq($from: wide-l) {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+}

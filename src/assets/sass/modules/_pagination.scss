@@ -1,0 +1,90 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: .9em 1rem 0;
+  // border-top: 1px solid $o20;
+
+  .theme-dark & {
+    border-top-color: $o5;
+  }
+
+  &_item {
+    font-size: .875rem;
+    font-weight: normal;
+
+    @include mq($from: tablet) {
+      width: 50%;
+    }
+  }
+
+  &_link {
+    display: block;
+    // padding: 0;
+    padding: .4em 0 .6em;
+    vertical-align: middle;
+    color: $o14;
+
+    &:hover,
+    &:active {
+      color: $D10;
+    }
+
+  }
+
+  .theme-dark & {
+    &_link {
+      color: $o10;
+
+      &:hover,
+      &:active {
+        color: $D12;
+      }
+
+    }
+    &_text {
+      letter-spacing: .075em;
+    }
+  }
+
+  &_prev {
+    @include mq($from: tablet) {
+      float: left;
+    }
+  }
+  &_next {
+    text-align: right;
+
+    @include mq($from: tablet) {
+      float: right;
+    }
+  }
+  // &_icon {
+  //   color: $d7;
+  // }
+  &_text {
+    display: inline-block;
+    vertical-align: inherit;
+    // padding: .4em 0 .6em;
+    letter-spacing: .025em;
+  }
+  &_prev_text {
+    padding-left: .25rem;
+  }
+  &_next_text {
+    padding-right: .25rem;
+  }
+
+  @include mq($from: tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.svg-icon {
+  display: inline-block;
+  // width: .875rem;
+  // height: .875rem;
+  width: 1rem;
+  height: 1rem;
+}

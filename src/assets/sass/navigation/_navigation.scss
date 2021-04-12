@@ -1,0 +1,145 @@
+.site-nav-open {
+  @include mq($until: phablet) {
+    z-index: 1;
+    .site-nav_list {
+      // transform: translateY(0);
+      transform: translateX(0);
+      opacity: 1;
+
+      // @include mq($from: phablet) {
+      //   transform: translateX(0);
+      //   right: 0;
+      // }
+    }
+  }
+}
+
+.nav-item {
+  font-size: .875rem;
+  line-height: 2;
+  letter-spacing: 0.025em;
+
+  a {
+    display: block;
+    padding: .125em .5em;
+    // color: $O6;
+    color: $dd7;
+
+    &:hover {
+      text-decoration: underline;
+      // color: $O5;
+      color: $D7;
+    }
+    @include mq($from: phablet) {
+      padding: 1.1rem .5rem 3rem;
+      position: relative;
+      &:after {
+        color: $o14;
+        content: "\2215"; // division slash
+        position: absolute;
+        right: -2px;
+        text-decoration: none;
+        transform: rotate(-20deg);
+      }
+    }
+  }
+  &:last-of-type {
+    a {
+      &:after {
+        @include mq($from: phablet) {
+          content: ""; // division slash
+          display: none;
+        }
+      }
+
+      @include mq($from: phablet) {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .theme-dark & {
+    letter-spacing: .05px;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+    a {
+      // color: adjust-color($O17, $saturation: -35%);
+      color: $dd12;
+      // text-shadow: -1px -1px 0 $o5, 1px 1px 0 rgba($o0, 90%);
+
+
+      &:hover {
+        // color: $O18;
+        color: $dd12;
+      }
+
+      &:after {
+        color: $o11;
+      }
+    }
+  }
+
+  @include mq($until: phablet) {
+    font-size: 1rem;
+  }
+}
+
+.nav-item-current {
+  a {
+    // color: $D19;
+    text-decoration: underline;
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+.no-js .menu-button {
+  display: none;
+}
+
+.menu-button {
+  background-color: rgba(#fff, 0);
+  border-radius: 3px;
+  width: 3rem;
+  transform: translate(-2px,12px);
+
+  &:focus {
+    outline: none;
+    background-color: $o21;
+  }
+
+  &:hover {
+
+    .svg-menu {
+      fill: $K15;
+    }
+
+  }
+
+  .theme-dark & {
+    &:focus {
+      background-color: $o13;
+    }
+    &:hover {
+
+      .svg-menu {
+        fill: $K21;
+      }
+
+    }
+
+    .svg-menu {
+      fill: $o19;
+    }
+  }
+
+  @include mq($from: phablet) {
+    transform: translate(3rem,1rem);
+  }
+}
+
+.menu-button-active {
+  .svg-menu {
+    fill: $K18;
+  }
+}

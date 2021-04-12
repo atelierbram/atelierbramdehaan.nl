@@ -1,0 +1,80 @@
+.site-footer {
+  height: 3em;
+  text-align: center;
+  position: absolute;
+  right:0;bottom:0;left:0;
+  padding-top: .75rem;
+  background-color: $o21;
+
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    color: $o15;
+    // font-weight: 700;
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 .5em 0 0;
+      letter-spacing: .05em;
+
+      &:before {
+        content: "\2022";
+        display: inline-block;
+        padding-right: .5em;
+        color: $o17;
+        vertical-align: baseline;
+      }
+
+
+      &:first-of-type {
+        &:before {
+          content: "";
+          display: none;
+        }
+      }
+
+    }
+
+    .theme-dark & {
+      li {
+        letter-spacing: .075em;
+        &:before {
+          color: $o7;
+        }
+      }
+    }
+
+    a {
+      display: inline-block;
+      padding: .4em 0 .6em;
+      color: $o10;
+      // box-shadow: none;
+
+      &:hover {
+       // color: $O9;
+       color: $o8;
+       // text-decoration: underline;
+      }
+
+    }
+
+  }
+
+  .theme-dark & {
+    background-color: $o1;
+    &_list {
+      color: $o12;
+      a {
+        color: $o12;
+        &:hover {
+          color: $O12;
+        }
+      }
+    }
+  }
+
+}
+

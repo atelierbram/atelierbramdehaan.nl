@@ -1,0 +1,51 @@
+@import 
+"spacing",
+"type-scale";
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+// https://github.com/tachyons-css/tachyons/blob/master/src/_text-align.css
+.tc {
+  text-align: center;
+}
+
+.row {
+  overflow: auto;
+}
+.has-bullets {
+  // li::before {
+  li {
+    padding-left: .25em;
+    transform: translateX(-0.25em);
+  }
+  li::marker {
+    content: "\2A";
+    font-size: .75em;
+    // transform: translate(-5px, 1px);
+    // display: inline-block;
+    // vertical-align: middle;
+    // line-height: 1;
+  }
+}
+
+// .flex {
+//   display: flex;
+// }
+// zie: spacing
+// .mtm {
+//   margin-top: 4.5rem;
+// }
+//
+// .mbm {
+//   margin-bottom: 4.5rem;
+// }
