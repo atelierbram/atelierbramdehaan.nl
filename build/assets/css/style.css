@@ -392,87 +392,6 @@ a {
     background-color: #3c4553;
     border-color: #1a1e23; }
 
-@media (max-width: 31.24em) {
-  .site-nav-open {
-    z-index: 1; }
-    .site-nav-open .site-nav_list {
-      transform: translateX(0);
-      opacity: 1; } }
-
-.nav-item {
-  font-size: .875rem;
-  line-height: 2;
-  letter-spacing: 0.025em; }
-  .nav-item a {
-    display: block;
-    padding: .125em .5em;
-    color: #6c5937; }
-    .nav-item a:hover {
-      text-decoration: underline;
-      color: #855200; }
-    @media (min-width: 31.25em) {
-      .nav-item a {
-        padding: 1.1rem .5rem 3rem;
-        position: relative; }
-        .nav-item a:after {
-          color: #8996a9;
-          content: "\2215";
-          position: absolute;
-          right: -2px;
-          text-decoration: none;
-          transform: rotate(-20deg); } }
-  @media (min-width: 31.25em) {
-    .nav-item:last-of-type a:after {
-      content: "";
-      display: none; } }
-  @media (min-width: 31.25em) {
-    .nav-item:last-of-type a {
-      padding-right: 0; } }
-  .theme-dark .nav-item {
-    letter-spacing: .05px;
-    font-weight: 200;
-    letter-spacing: 0.05em; }
-    .theme-dark .nav-item a {
-      color: #ac935d; }
-      .theme-dark .nav-item a:hover {
-        color: #ac935d; }
-      .theme-dark .nav-item a:after {
-        color: #67768e; }
-  @media (max-width: 31.24em) {
-    .nav-item {
-      font-size: 1rem; } }
-
-.nav-item-current a {
-  text-decoration: underline;
-  pointer-events: none;
-  cursor: default; }
-
-.no-js .menu-button {
-  display: none; }
-
-.menu-button {
-  background-color: rgba(255, 255, 255, 0);
-  border-radius: 3px;
-  width: 3rem;
-  transform: translate(-2px, 12px); }
-  .menu-button:focus {
-    outline: none;
-    background-color: #dcdfe5; }
-  .menu-button:hover .svg-menu {
-    fill: #1ab77b; }
-  .theme-dark .menu-button:focus {
-    background-color: #7d8ba1; }
-  .theme-dark .menu-button:hover .svg-menu {
-    fill: #a9ead1; }
-  .theme-dark .menu-button .svg-menu {
-    fill: #c4cad4; }
-  @media (min-width: 31.25em) {
-    .menu-button {
-      transform: translate(3rem, 1rem); } }
-
-.menu-button-active .svg-menu {
-  fill: #47d19c; }
-
 .site {
   min-height: 100vh;
   position: relative;
@@ -711,7 +630,7 @@ a {
   height: 1rem; }
 
 .site-footer {
-  height: 3em;
+  min-height: 3em;
   text-align: center;
   position: absolute;
   right: 0;
