@@ -1,1 +1,1 @@
-<?php $rootUrl="http://localhost/~bram/bitbucket/abdh-redesign/"; ?>
+<?php $rootUrl="http://localhost/github.com/atelierbram/atelierbramdehaan.nl/"; ?>

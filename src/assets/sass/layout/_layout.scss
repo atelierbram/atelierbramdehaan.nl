@@ -22,7 +22,8 @@
   //   padding-right: 6em;
   // }
   @include mq($from: phablet) {
-    max-width: 75em;
+    // max-width: 75em;
+    max-width: 48em;
     // margin: 0 auto 0 0;
     margin-right: auto;
   }
@@ -35,18 +36,18 @@
     padding-left: 3em;
     padding-right: 3em;
   }
-  @include mq($from: tablet) {
-    padding-left: 4em;
-    padding-right: 4em;
-  }
-  @include mq($from: tablet-l) {
-    padding-left: 5em;
-    padding-right: 5em;
-  }
-  @include mq($from: desktop) {
-    padding-left: 6em;
-    padding-right: 6em;
-  }
+  // @include mq($from: tablet) {
+  //   padding-left: 4em;
+  //   padding-right: 4em;
+  // }
+  // @include mq($from: tablet-l) {
+  //   padding-left: 5em;
+  //   padding-right: 5em;
+  // }
+  // @include mq($from: desktop) {
+  //   padding-left: 6em;
+  //   padding-right: 6em;
+  // }
 }
 
 // .container {

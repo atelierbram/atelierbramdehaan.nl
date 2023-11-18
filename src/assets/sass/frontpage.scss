@@ -1,6 +1,6 @@
 @import
-"../../colorscheme/assets/sass/palette/master-palette-24-hues.scss",
-"../../colorscheme/assets/sass/palette/monochrome-palette-24-hues.scss",
+"colorscheme/palette/master-palette-24-hues.scss",
+"colorscheme/palette/monochrome-palette-24-hues.scss",
 "variables/variables",
 "mixins/mq",
 "modules/cta";
@@ -8,17 +8,17 @@
 $bbgl: adjust-color($O21,$saturation: -50%);
 $bbgd: adjust-color($o3,$saturation: 5%);
 
-.frontpage.is-loaded .site {
-  position: relative;
+// .frontpage.is-loaded .site {
+//   position: relative;
   // background-image: linear-gradient(to bottom, $o21, $o21 120px, rgba($o21,0) 120px, rgba($o21,0) );
   // background-image: linear-gradient(to bottom, $bbgl, $bbgl 120px, rgba($bbgl,0) 120px, rgba($bbgl,0) );
-  background-image: linear-gradient(to bottom, $bbgl, $bbgl 120px, rgba($bbgl,0) 120px, rgba($bbgl,0) ), url(#{$assetPath}img/svg/screen-monitor-tablet-phone_860x620.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center 32px;
-}
+  // background-image: linear-gradient(to bottom, $bbgl, $bbgl 120px, rgba($bbgl,0) 120px, rgba($bbgl,0) ), url(#{$assetPath}img/svg/screen-monitor-tablet-phone_860x620.svg);
+  // background-repeat: no-repeat, no-repeat;
+  // background-position: center, center 32px;
+// }
 
-.frontpage.theme-dark.is-loaded .site {
-  background-image: linear-gradient(to bottom, $bbgd, $bbgd 120px, rgba($bbgd,0) 120px, rgba($bbgl,0) ), url(#{$assetPath}img/svg/screen-monitor-tablet-phone-darkmode_860x620.svg);
-}
+// .frontpage.theme-dark.is-loaded .site {
+  // background-image: linear-gradient(to bottom, $bbgd, $bbgd 120px, rgba($bbgd,0) 120px, rgba($bbgl,0) ), url(#{$assetPath}img/svg/screen-monitor-tablet-phone-darkmode_860x620.svg);
+// }
 
 

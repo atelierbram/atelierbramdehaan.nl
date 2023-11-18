@@ -1,6 +1,6 @@
 <?php
-// $rootUrl = "http://localhost/~bram/atelierbramdehaan.nl/src/";
-// $assetPath = "http://localhost/~bram/atelierbramdehaan.nl/docs/assets/";
+// $rootUrl = "http://localhost/github.com/atelierbram/atelierbramdehaan.nl/src/";
+// $assetPath = "http://localhost/github.com/atelierbram/atelierbramdehaan.nl/docs/assets/";
 
 $rootUrl = "https://atelierbramdehaan.nl/";
 $assetPath = "https://atelierbramdehaan.nl/assets/";

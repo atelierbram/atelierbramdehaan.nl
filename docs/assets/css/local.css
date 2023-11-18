@@ -1,0 +1,58 @@
+@charset "utf-8";
+@charset "UTF-8";
+@media (min-width: 20em) {
+  .server-local body::before {
+    content: "mobile ≥ 320px (20em)";
+  }
+}
+@media (min-width: 31.25em) {
+  .server-local body::before {
+    content: "phablet ≥ 500px (31.25em)";
+  }
+}
+@media (min-width: 46.25em) {
+  .server-local body::before {
+    content: "tablet ≥ 740px (46.25em)";
+  }
+}
+@media (min-width: 53.75em) {
+  .server-local body::before {
+    content: "tablet-l ≥ 860px (53.75em)";
+  }
+}
+@media (min-width: 61.25em) {
+  .server-local body::before {
+    content: "desktop ≥ 980px (61.25em)";
+  }
+}
+@media (min-width: 76.5em) {
+  .server-local body::before {
+    content: "desktop-l ≥ 1224px (76.5em)";
+  }
+}
+@media (min-width: 81.25em) {
+  .server-local body::before {
+    content: "wide ≥ 1300px (81.25em)";
+  }
+}
+@media (min-width: 100em) {
+  .server-local body::before {
+    content: "wide-l ≥ 1600px (100em)";
+  }
+}
+
+.server-local body::before {
+  background-color: #FCF8E3;
+  border-bottom: 1px solid #FBEED5;
+  border-left: 1px solid #FBEED5;
+  color: #C09853;
+  font: small-caption;
+  padding: 3px 6px;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+/*# sourceMappingURL=local.css.map */

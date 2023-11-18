@@ -1,4 +1,4 @@
-@import 
+@import
 "spacing",
 "type-scale";
 
@@ -29,12 +29,21 @@
     transform: translateX(-0.25em);
   }
   li::marker {
-    content: "\2A";
-    font-size: .75em;
+    // content: "\2A";
+    // font-size: .75em;
+    content: "·";
+    font-size: 1.25em;
+    line-height: 1;
+    color: $D12;
     // transform: translate(-5px, 1px);
     // display: inline-block;
     // vertical-align: middle;
     // line-height: 1;
+  }
+  .theme-dark & {
+    li::marker {
+      color: $D13;
+    }
   }
 }
 

@@ -4,14 +4,14 @@
   position: absolute;
   right:0;bottom:0;left:0;
   padding-top: .75rem;
-  background-color: $o21;
+  background-color: $d21;
 
   &_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
-    color: $o15;
+    color: $d15;
     // font-weight: 700;
 
     li {
@@ -24,7 +24,7 @@
         content: "\2022";
         display: inline-block;
         padding-right: .5em;
-        color: $o17;
+        color: $d17;
         vertical-align: baseline;
       }
 
@@ -42,7 +42,7 @@
       li {
         letter-spacing: .075em;
         &:before {
-          color: $o7;
+          color: $d7;
         }
       }
     }
@@ -50,12 +50,12 @@
     a {
       display: inline-block;
       padding: .4em 0 .6em;
-      color: $o10;
+      color: $d10;
       // box-shadow: none;
 
       &:hover {
-       // color: $O9;
-       color: $o8;
+       // color: $d9;
+       color: $d8;
        // text-decoration: underline;
       }
 
@@ -64,13 +64,13 @@
   }
 
   .theme-dark & {
-    background-color: $o1;
+    background-color: $d1;
     &_list {
-      color: $o12;
+      color: $d12;
       a {
-        color: $o12;
+        color: $d12;
         &:hover {
-          color: $O12;
+          color: $d12;
         }
       }
     }

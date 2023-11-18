@@ -1,1 +1,36 @@
-{"name":"abdh-redesign","version":"1.0.0","description":"redesign van atelierbramdehaan.nl","main":"Gruntfile.js","scripts":{"update:packages":"node ../js/snippets/npm-wipe-package-dependencies.js && rm -rf node_modules && npm update --save-dev && npm update --save"},"browserslist":["defaults"],"repository":{"type":"git","url":"git+https://atelierbram@bitbucket.org/atelierbram/abdh-redesign.git"},"keywords":["webdesign"],"author":"Bram de Haan","license":"MIT","homepage":"https://bitbucket.org/atelierbram/abdh-redesign#readme","devDependencies":{"cssnano":"^4.0.0","grunt":"*","grunt-contrib-clean":"*","grunt-contrib-concat":"*","grunt-contrib-copy":"*","grunt-contrib-htmlmin":"*","grunt-contrib-uglify":"*","grunt-contrib-watch":"*","grunt-postcss":"*","grunt-sass":"*","load-grunt-tasks":"*","node-sass":"*","postcss":"*"},"dependencies":{"autoprefixer":"^9.1.0"}}
+{
+  "name": "atelier-bram-de-haan",
+  "version": "1.0.0",
+  "description": "website of Bram de Haan",
+  "main": "sass.js",
+  "scripts": {
+    "js": "rollup --config",
+    "css": "node sass.js",
+    "copy": "recursive-copy 'src/copy' 'dist'",
+    "build-dirty": "npm-run-all -p js css svg img copy",
+    "build": "npm-run-all -s build-dirty",
+    "watch-css": "chokidar './src/assets/sass/**/*.scss' -c 'npm run css'",
+    "watch-js": "chokidar './src/assets/js/**/*.js' -c 'npm run js'",
+    "watch-copy": "chokidar './src/copy/**/*.*' -c 'npm run copy'",
+    "watch": "npm-run-all -p build watch-css watch-js watch-copy"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/atelierbram/gzh.git"
+  },
+  "author": "Atelierbram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/atelierbram/gzh/issues"
+  },
+  "homepage": "https://bitbucket.org/atelierbram/gzh#readme",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "chokidar-cli": "^3.0.0",
+    "npm-run-all": "^4.1.5",
+    "recursive-fs": "^2.1.0",
+    "rollup": "^4.3.0",
+    "sass": "^1.69.5"
+  }
+}

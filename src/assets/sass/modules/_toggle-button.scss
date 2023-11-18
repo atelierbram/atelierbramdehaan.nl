@@ -3,20 +3,20 @@
   z-index: 0;
   width: 1.5rem;
   height: 1.5rem;
-  top: 9rem;
+  top: 4rem;
   right: .75rem;
-  color: $o15;
+  color: $d15;
 
   &_toggle {
     display: none;
     &:hover + .theme-switch_label {
-      color: $K14;
+      color: $D14;
     }
   }
   .theme-dark & {
-    color: $o14;
+    color: $d14;
     &_toggle:hover + .theme-switch_label {
-      color: $K19;
+      color: $D19;
     }
   }
 
@@ -37,7 +37,7 @@
   //   right: .75rem;
   // }
 
-  @include mq($until: desktop) {
-    top: 4rem;
-  }
+  // @include mq($until: desktop) {
+  //   top: 4rem;
+  // }
 }

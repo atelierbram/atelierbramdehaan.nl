@@ -20,11 +20,8 @@ release
 /tmp/
 /temp/
 dist
-vector
+docs/assets/css/colorscheme
 _
-_patternlab
-_test
-_vector
 
 TODO.md
 
