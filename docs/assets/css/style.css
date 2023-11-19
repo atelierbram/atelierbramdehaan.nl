@@ -400,6 +400,11 @@ a {
     margin-right: auto;
   }
 }
+@media (orientation: portrait) and (pointer: coarse) {
+  .site {
+    max-width: 100%;
+  }
+}
 
 .container {
   padding-left: 2em;
