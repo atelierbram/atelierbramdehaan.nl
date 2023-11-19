@@ -47,12 +47,13 @@
     <link rel="stylesheet" href="<?= $assetPath; ?>css/local.min.css?v1" media="all">
   <?php endif; ?>
   <?php if ( ($env == "prod") ): ?>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e2d112">
-  <meta name="msapplication-TileColor" content="#23241a">
-  <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#da9c0b">
+    <meta name="msapplication-TileColor" content="#e5e2dc">
+    <meta name="theme-color" content="#e5e2dc">
   <?php endif; ?>
   </head>
   <body class="id-<?= $id; ?> page-type-<?= $type; ?>">
