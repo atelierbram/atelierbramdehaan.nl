@@ -10,18 +10,32 @@
   color: hsl(37, 60%, 12%);
 }
 .cta .article-intro_text a {
-  color: hsl(214, 70%, 20%);
+  color: hsl(37, 95%, 15%);
 }
 .cta .article-intro_text a:hover {
-  color: hsl(214, 70%, 28%);
+  color: hsl(37, 95%, 25%);
 }
 .theme-dark .cta {
-  box-shadow: 2px 6px 14px hsl(216, 16%, 8%);
+  box-shadow: 2px 6px 14px hsl(37, 70%, 8%);
+  background-color: hsl(38, 40%, 30%);
+  background-image: linear-gradient(to right, hsl(40, 33%, 37%), hsl(38, 40%, 30%) 75%, hsl(37, 40%, 27%));
 }
 .theme-dark .cta h3,
 .theme-dark .cta p {
   letter-spacing: 0 !important;
   word-spacing: 0;
+}
+.theme-dark .cta h3 {
+  color: hsl(42, 50%, 80%);
+}
+.theme-dark .cta p {
+  color: hsl(42, 55%, 86%);
+}
+.theme-dark .cta a {
+  color: hsl(42, 60%, 92%);
+}
+.theme-dark .cta a:hover {
+  color: hsl(37, 80%, 81%);
 }
 @media (max-width: 31.24em) {
   .cta {
