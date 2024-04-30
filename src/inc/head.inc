@@ -13,12 +13,12 @@
     <style id="fontfaceCss"><?php include "../inc/fontface.css.inc"; ?></style>
   <?php endif; ?>
   <?php if ( ($id == "siteIndex") && ($env == "dev") ): ?>
-    <link rel="stylesheet" href="<?= $assetPath; ?>css/critical.css?v7"  media="all">
-    <link rel="stylesheet" href="<?= $assetPath; ?>css/frontpage.css?v7" media="all">
+    <link rel="stylesheet" href="<?= $assetPath; ?>css/critical.css?v8"  media="all">
+    <link rel="stylesheet" href="<?= $assetPath; ?>css/frontpage.css?v8" media="all">
   <?php endif; ?>
   <?php if ( ($id == "siteIndex") && ($env == "prod") ): ?>
     <style id="critalCss"><?php include "inc/critical.css.inc"; ?></style>
-    <link rel="stylesheet" href="<?= $assetPath; ?>css/frontpage.min.css?v7" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="<?= $assetPath; ?>css/frontpage.min.css?v8" media="print" onload="this.media='all'">
   <?php endif; ?>
   <?php if ( ($type == "landing-page") && ($env == "prod") ): ?>
     <style id="critalCss"><?php include "../inc/critical.css.inc"; ?></style>
@@ -27,11 +27,11 @@
     <style id="critalCss"><?php include "../../inc/critical.css.inc"; ?></style>
   <?php endif ?>
   <?php if ( ($env == "dev") ): ?>
-    <link rel="stylesheet" href="<?= $assetPath; ?>css/style.css?v7" media="all">
+    <link rel="stylesheet" href="<?= $assetPath; ?>css/style.css?v8" media="all">
   <?php endif; ?>
   <?php if ( ($env == "prod") ): ?>
-    <link rel="stylesheet" href="<?= $assetPath; ?>css/style.min.css?v7" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="<?= $assetPath; ?>css/style.min.css?v7"></noscript>
+    <link rel="stylesheet" href="<?= $assetPath; ?>css/style.min.css?v8" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="<?= $assetPath; ?>css/style.min.css?v8"></noscript>
   <?php endif; ?>
   <?php if ($id == "siteIndex"): ?>
     <script id="headDetect"><?php include "inc/head-detect.js.inc"; ?></script>
