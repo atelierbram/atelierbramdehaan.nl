@@ -1,7 +1,7 @@
 <div id="page" class="site">
   <div class="banner">
     <header class="site-header">
-      <h1 class="site-header_title"><a class="logo" href="<?= $rootUrl ?>"><img data-src="<?= $assetPath ?>img/svg/atelierbramdehaan_768x384.svg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="logo Atelier Bram de Haan" class="logo_img" /><span class="screen-reader-text">Atelier </span><span class="logo_name screen-reader-text">Bram de Haan</span></a></h1>
+      <h1 class="site-header_title"><a class="logo" href="<?= $rootUrl ?>"><img data-src="<?= $assetPath ?>img/svg/abdh-redesign-logo-11_1200x600.svg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="logo Atelier Bram de Haan" class="logo_img" /><span class="screen-reader-text">Atelier </span><span class="logo_name screen-reader-text">Bram de Haan</span></a></h1>
       <p class="tagline screen-reader-text">2D Vormgeving</p>
     </header>
     <div class="theme-switch">

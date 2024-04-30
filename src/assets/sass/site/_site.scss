@@ -36,11 +36,10 @@ $bbgd: adjust-color($o3,$saturation: 5%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    // width: 10.5rem;
-    width: 12rem;
-    // color: $D8;
     box-shadow: none;
-    padding: 1px 0 0 2px;
+    width: 10rem;
+    padding: .5rem 0 0 .5rem;
+    // box-shadow: none;
 
     // &_name {
     //   font-family: brandosans-regular-v100, AvenirNext-Regular, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Noto Sans",sans-serif;
@@ -57,10 +56,13 @@ $bbgd: adjust-color($o3,$saturation: 5%);
   .theme-dark & {
     .logo {
       color: adjust-color($D16, $saturation: -35%);
-      background-image: url(#{$assetPath}img/svg/atelierbramdehaan-inverted_768x384.svg);
-      background-position: center top;
+      // background-image: url(#{$assetPath}img/svg/atelierbramdehaan-inverted_768x384.svg);
+      background-image: url(#{$assetPath}img/svg/abdh-redesign-logo-11-inverted_1200x600.svg);
       background-repeat: no-repeat;
-      min-height: 95px;
+      background-position: 8px 8px;
+      // min-height: 95px;
+      min-height: 84px;
+      background-size: 95%;
 
       &_img {
         display: none;
