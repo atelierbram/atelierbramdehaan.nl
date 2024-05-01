@@ -3,17 +3,23 @@ $bbgd: adjust-color($o3,$saturation: 5%);
 
 .site {
   position: relative;
-  // background-image: linear-gradient(to bottom, $o21, $o21 96px, rgba($o21,0) 96px, rgba($o21,0) );
-  background-image: linear-gradient(to bottom, $d21, $d21 96px, rgba($d21,0) 96px, rgba($d21,0) );
+  background-image: linear-gradient(to bottom, $d21, $d21 80px, rgba($d21,0) 0, rgba($d21,0) );
   border-right: 1px solid $d22;
   background-repeat: no-repeat;
-  // background-image: linear-gradient(to bottom, $bbgl, $bbgl 120px, rgba($bbgl,0) 120px, rgba($bbgl,0) );
 
   .theme-dark & {
-    // background-image: linear-gradient(to bottom, $bbgd, $bbgd 96px, rgba($bbgd,0) 96px, rgba($bbgd,0) );
-    background-image: linear-gradient(to bottom, $d1, $d1 96px, rgba($d1,0) 96px, rgba($d1,0) );
+    background-image: linear-gradient(to bottom, $d1, $d1 80px, rgba($d1,0) 0, rgba($d1,0) );
     border-right: 1px solid $d3;
+
+    @include mq($from: phablet) {
+      background-image: linear-gradient(to bottom, $d1, $d1 96px, rgba($d1,0) 0, rgba($d1,0) );
+    }
   }
+
+  @include mq($from: phablet) {
+    background-image: linear-gradient(to bottom, $d21, $d21 96px, rgba($d21,0) 0, rgba($d21,0) );
+  }
+
 }
 
 .banner {
@@ -58,7 +64,7 @@ $bbgd: adjust-color($o3,$saturation: 5%);
       color: adjust-color($D16, $saturation: -35%);
       // background-image: url(#{$assetPath}img/svg/atelierbramdehaan-inverted_768x384.svg);
       // background-image: url(#{$assetPath}img/svg/abdh-redesign-logo-11-inverted_1200x600.svg);
-      background-image: url(#{$assetPath}img/svg/atelierbramdehaan-logo-12-brando-inverted_768x384.svg);
+      background-image: url(#{$assetPath}img/svg/atelierbramdehaan-logo-12-brando-inverted_768x384.svg?v1);
       background-repeat: no-repeat;
       background-position: 8px 8px;
       // min-height: 95px;
