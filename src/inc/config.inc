@@ -8,8 +8,8 @@ $assetPath = "https://atelierbramdehaan.nl/assets/";
 // $env = "dev";
 // $server = "local";
 
-$env = "prod";
-$server = "remote";
+// $env = "prod";
+// $server = "remote";
 
 $siteTitle = "Atelier Bram de Haan";
 $tagline = "Frontend Webdevelopment";
