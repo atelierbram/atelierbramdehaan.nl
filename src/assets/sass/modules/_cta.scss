@@ -4,10 +4,14 @@
 .cta {
   background-color: $D21;
   background-image: linear-gradient(to right,$D22,$D21 75%,$D20);
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding: .75rem 2rem 1.5rem;
+  max-width: fit-content;
 
   h3 {
+    max-width: 30ch;
     color: $D4;
-    font-family: Brando, brandosans-regular-v100, AvenirNext-Regular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Noto Sans, sans-serif;
   }
   p {
     color: $D2;
@@ -51,18 +55,16 @@
     // }
   }
 
-  @include mq($until: phablet) {
-    margin-left: -2rem;
-    margin-right: -2rem;
-    padding: 1.75rem 2rem .5rem;
-  }
   @include mq($from: phablet) {
-    display: inline-block;
-    padding: 3rem;
-    transform: rotate(-6deg);
+    // display: inline-block;
     border-radius: 3px;
     transform: rotate(-4deg);
     box-shadow: 2px 6px 14px rgba($d12,.5);
+  }
+  @include mq($from: tablet) {
+    margin: auto;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
   @include mq($from: wide-l) {
     position: fixed;

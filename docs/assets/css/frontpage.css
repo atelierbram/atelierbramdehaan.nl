@@ -2,10 +2,14 @@
 .cta {
   background-color: hsl(42, 50%, 80%);
   background-image: linear-gradient(to right, hsl(42, 55%, 86%), hsl(42, 50%, 80%) 75%, hsl(42, 45%, 75%));
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding: 0.75rem 2rem 1.5rem;
+  max-width: fit-content;
 }
 .cta h3 {
+  max-width: 30ch;
   color: hsl(37, 40%, 18%);
-  font-family: Brando, brandosans-regular-v100, AvenirNext-Regular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Noto Sans, sans-serif;
 }
 .cta p {
   color: hsl(37, 60%, 12%);
@@ -39,21 +43,18 @@
 .theme-dark .cta a:hover {
   color: hsl(37, 80%, 81%);
 }
-@media (max-width: 31.24em) {
-  .cta {
-    margin-left: -2rem;
-    margin-right: -2rem;
-    padding: 1.75rem 2rem 0.5rem;
-  }
-}
 @media (min-width: 31.25em) {
   .cta {
-    display: inline-block;
-    padding: 3rem;
-    transform: rotate(-6deg);
     border-radius: 3px;
     transform: rotate(-4deg);
-    box-shadow: 2px 6px 14px rgba(144, 137, 122, 0.5);
+    box-shadow: 2px 6px 14px rgba(140, 135, 125, 0.5);
+  }
+}
+@media (min-width: 46.25em) {
+  .cta {
+    margin: auto;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
 }
 @media (min-width: 100em) {
