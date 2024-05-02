@@ -719,6 +719,11 @@ a {
   display: none;
 }
 
+@media (max-width: 31.24em) {
+  .article-intro_title {
+    padding-top: 0.3em;
+  }
+}
 .theme-dark .article-intro p,
 .theme-dark .article-intro ul li, .theme-dark .article-intro_text {
   letter-spacing: 0.0625rem;

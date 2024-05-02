@@ -111,10 +111,13 @@ $bbgd: adjust-color($o3,$saturation: 5%);
 .article-intro {
   // min-height: 18rem; // 288px;
 
-  // &_title {
+  &_title {
     // padding: 1rem 0;
     // color: $D12;
-  // }
+    @include mq($until: phablet) {
+      padding-top: .3em;
+    }
+  }
 
   // &_text {
   //   max-width: 42rem; // 648px
