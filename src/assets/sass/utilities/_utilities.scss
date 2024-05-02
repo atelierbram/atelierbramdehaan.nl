@@ -50,10 +50,14 @@
 }
 
 .serif {
-  font-family: Brando, ui-serif, Marion, Cambria, "Droid Serif", "Roboto Serif", Georgia, serif;
+  font-family: "Brando Semibold", ui-serif, Marion, Cambria, "Droid Serif", "Roboto Serif", Georgia, serif;
+  color: $D10;
 
   .theme-dark & {
-      font-family: "Brando Light", ui-serif, Marion, Cambria, "Droid Serif", "Roboto Serif", Georgia, serif;
+      // font-family: "Brando Light", ui-serif, Marion, Cambria, "Droid Serif", "Roboto Serif", Georgia, serif;
+      font-family: Brando, ui-serif, Marion, Cambria, "Droid Serif", "Roboto Serif", Georgia, serif;
+      letter-spacing: .05em;
+      color: $D15;
   }
 }
 // .flex {
