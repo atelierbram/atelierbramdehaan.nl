@@ -1,0 +1,42 @@
+.article_en,
+.is-language-nl-hidden .article_nl {
+  display: none;
+}
+.is-language-nl-hidden {
+  .article_en {
+    display: block;
+  }
+  // .lsl-nl {
+  // }
+}
+
+.lsl {
+  color: $d14;
+  &:hover {
+    color: $D12;
+  }
+  .theme-dark & {
+    color: $d10;
+    &:hover {
+      color: $D16;
+    }
+  }
+}
+.is-language-en-hidden .lsl-en,
+.is-language-nl-hidden .lsl-nl {
+  pointer-events: none;
+  cursor: default;
+  color: $D12;
+
+  .theme-dark & {
+    color: $D16;
+  }
+}
+
+.divider {
+  color: $d14;
+
+  .theme-dark & {
+    color: $d10;
+  }
+}

@@ -3,7 +3,8 @@
 "colorscheme/palette/monochrome-palette-24-hues.scss",
 "variables/variables",
 "mixins/mq",
-"modules/cta";
+"modules/cta",
+"modules/language-switch";
 
 $bbgl: adjust-color($O21,$saturation: -50%);
 $bbgd: adjust-color($o3,$saturation: 5%);

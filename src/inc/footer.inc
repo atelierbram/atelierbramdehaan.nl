@@ -9,6 +9,7 @@
 <?php endif; ?>
 <?php if ($id == "siteIndex"): ?>
 <script id="themeSwitchJs"><?php include "inc/theme-switch-with-local-storage.js.inc" ?></script>
+<script id="toggleLanguageJs"><?php include "inc/toggle-language.js.inc" ?></script>
 <?php else: ?>
 <script id="themeSwitchJs"><?php include "../inc/theme-switch-with-local-storage.js.inc" ?></script>
 <?php endif; ?>

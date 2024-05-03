@@ -248,11 +248,6 @@ main {
   margin-top: 18px;
   margin-bottom: 9em;
 }
-@media (min-width: 31.25em) {
-  main {
-    margin-top: 22px;
-  }
-}
 
 p,
 ul {
@@ -709,7 +704,7 @@ a {
 }
 .theme-dark .site-header .logo {
   color: #8f8f8f;
-  background-image: url(https://atelierbramdehaan.nl/assets/img/svg/atelierbramdehaan-logo-12-brando-inverted_768x384.svg?v1);
+  background-image: url(https://atelierbramdehaan.nl/assets/img/svg/atelierbramdehaan-logo-12-brando-inverted_768x384.svg?v2);
   background-repeat: no-repeat;
   background-position: 8px 8px;
   min-height: 84px;
@@ -719,11 +714,6 @@ a {
   display: none;
 }
 
-@media (max-width: 31.24em) {
-  .article-intro_title {
-    padding-top: 0.3em;
-  }
-}
 .theme-dark .article-intro p,
 .theme-dark .article-intro ul li, .theme-dark .article-intro_text {
   letter-spacing: 0.0625rem;

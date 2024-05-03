@@ -8,7 +8,7 @@
   max-width: fit-content;
 }
 .cta h3 {
-  max-width: 30ch;
+  max-width: 32ch;
   color: hsl(37, 40%, 18%);
 }
 .cta p {
@@ -63,6 +63,46 @@
     top: 0;
     right: 0;
   }
+}
+
+.article_en,
+.is-language-nl-hidden .article_nl {
+  display: none;
+}
+
+.is-language-nl-hidden .article_en {
+  display: block;
+}
+
+.lsl {
+  color: hsl(41, 6%, 60%);
+}
+.lsl:hover {
+  color: hsl(42, 33%, 43%);
+}
+.theme-dark .lsl {
+  color: hsl(41, 6%, 44%);
+}
+.theme-dark .lsl:hover {
+  color: hsl(42, 33%, 56%);
+}
+
+.is-language-en-hidden .lsl-en,
+.is-language-nl-hidden .lsl-nl {
+  pointer-events: none;
+  cursor: default;
+  color: hsl(42, 33%, 43%);
+}
+.theme-dark .is-language-en-hidden .lsl-en,
+.theme-dark .is-language-nl-hidden .lsl-nl {
+  color: hsl(42, 33%, 56%);
+}
+
+.divider {
+  color: hsl(41, 6%, 60%);
+}
+.theme-dark .divider {
+  color: hsl(41, 6%, 44%);
 }
 
 /*# sourceMappingURL=frontpage.css.map */
