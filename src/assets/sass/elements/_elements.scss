@@ -31,16 +31,6 @@ body {
   }
 }
 
-body {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpolygon points='4.25 0 0.25 8 0 8 4 0 ' fill='%23dcd8d1'/%3E%3Cpolygon points='8 0.5 4.25 8 4 8 8 0 ' fill='%23dcd8d1'/%3E%3Cpolygon points='0 0.5 0 0 0.25 0 ' fill='%23dcd8d1'/%3E%3C/svg%3E");
-
-  .theme-dark & {
-   font-family: BrandoSansLight, AvenirNext-UltraLight, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Noto Sans, sans-serif;
-    color: $d19;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpolygon points='4.25 0 0.25 8 0 8 4 0 ' fill='%23433f38'/%3E%3Cpolygon points='8 0.5 4.25 8 4 8 8 0 ' fill='%23433f38'/%3E%3Cpolygon points='0 0.5 0 0 0.25 0 ' fill='%23433f38'/%3E%3C/svg%3E");
-  }
-}
-
 html {
   cursor: default;
 
@@ -62,12 +52,17 @@ html {
     font-size: 14px;
   }
 }
-
 body {
   margin: 0;
   font: 100%/1.5 brandosans-regular-v100, AvenirNext-Regular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Noto Sans, sans-serif;
-  // color: $d5;
   color: $dd5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpolygon points='4.25 0 0.25 8 0 8 4 0 ' fill='%23dcd8d1'/%3E%3Cpolygon points='8 0.5 4.25 8 4 8 8 0 ' fill='%23dcd8d1'/%3E%3Cpolygon points='0 0.5 0 0 0.25 0 ' fill='%23dcd8d1'/%3E%3C/svg%3E");
+
+  .theme-dark & {
+    font-family: BrandoSansLight, AvenirNext-UltraLight, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Noto Sans, sans-serif;
+    color: $d19;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpolygon points='4.25 0 0.25 8 0 8 4 0 ' fill='%23433f38'/%3E%3Cpolygon points='8 0.5 4.25 8 4 8 8 0 ' fill='%23433f38'/%3E%3Cpolygon points='0 0.5 0 0 0.25 0 ' fill='%23433f38'/%3E%3C/svg%3E");
+  }
 
   @include mq($until: phablet) {
     line-height: 1.35;
@@ -78,10 +73,10 @@ body {
 //   font-size: 1em;
 // }
 
-hr {
-  height: 0;
-  overflow: visible;
-}
+// hr {
+//   height: 0;
+//   overflow: visible;
+// }
 
 main {
   display: block;
@@ -118,10 +113,10 @@ h2,h3 {
   padding: 1.35rem 0 .85rem;
 }
 
-pre {
-  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Noto Mono, Oxygen Mono, Liberation Mono, monospace;
-  font-size: 1em;
-}
+// pre {
+//   font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Noto Mono, Oxygen Mono, Liberation Mono, monospace;
+//   font-size: 1em;
+// }
 
 a {
   color: $D0; // zie: _elements-critical
@@ -143,14 +138,14 @@ a {
 
 }
 
-sup {
-  line-height: 1;
-}
+// sup {
+//   line-height: 1;
+// }
 
-abbr[title] {
-  text-decoration: underline;
-  text-decoration: underline dotted;
-}
+// abbr[title] {
+//   text-decoration: underline;
+//   text-decoration: underline dotted;
+// }
 
 b,
 strong {
@@ -165,9 +160,9 @@ strong {
 //   font-size: 1em;
 // }
 
-small {
-  font-size: 80%;
-}
+// small {
+//   font-size: 80%;
+// }
 
 ::-moz-selection {
   background-color: $D20;
@@ -228,21 +223,21 @@ button {
 }
 //
 // select,
-button,
+// button,
 input {
   margin: 0;
   overflow: visible;
 }
 //
-button {
-  overflow: visible;
-  text-transform: none;
-  -webkit-appearance: button;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  touch-action: manipulation;
-}
+// button {
+//   overflow: visible;
+//   text-transform: none;
+//   -webkit-appearance: button;
+//   padding: 0;
+//   border: 0;
+//   cursor: pointer;
+//   touch-action: manipulation;
+// }
 //
 // button,
 // [type="button"],
@@ -364,8 +359,8 @@ button {
 // summary,
 // textarea,
 // [tabindex],
+// button,
 input,
-button,
 a {
   -ms-touch-action: manipulation;
   touch-action: manipulation;

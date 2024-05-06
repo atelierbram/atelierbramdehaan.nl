@@ -134,10 +134,6 @@ h3 {
   text-align: center;
 }
 
-.small {
-  font-size: 0.75em;
-}
-
 .row {
   overflow: auto;
 }
@@ -197,15 +193,6 @@ body {
   background-color: hsl(39, 6%, 12%);
 }
 
-body {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpolygon points='4.25 0 0.25 8 0 8 4 0 ' fill='%23dcd8d1'/%3E%3Cpolygon points='8 0.5 4.25 8 4 8 8 0 ' fill='%23dcd8d1'/%3E%3Cpolygon points='0 0.5 0 0 0.25 0 ' fill='%23dcd8d1'/%3E%3C/svg%3E");
-}
-.theme-dark body {
-  font-family: BrandoSansLight, AvenirNext-UltraLight, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Noto Sans, sans-serif;
-  color: hsl(42, 8%, 80%);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpolygon points='4.25 0 0.25 8 0 8 4 0 ' fill='%23433f38'/%3E%3Cpolygon points='8 0.5 4.25 8 4 8 8 0 ' fill='%23433f38'/%3E%3Cpolygon points='0 0.5 0 0 0.25 0 ' fill='%23433f38'/%3E%3C/svg%3E");
-}
-
 html {
   cursor: default;
   font-size: 16px;
@@ -231,16 +218,17 @@ body {
   margin: 0;
   font: 100%/1.5 brandosans-regular-v100, AvenirNext-Regular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Noto Sans, sans-serif;
   color: #564524;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpolygon points='4.25 0 0.25 8 0 8 4 0 ' fill='%23dcd8d1'/%3E%3Cpolygon points='8 0.5 4.25 8 4 8 8 0 ' fill='%23dcd8d1'/%3E%3Cpolygon points='0 0.5 0 0 0.25 0 ' fill='%23dcd8d1'/%3E%3C/svg%3E");
+}
+.theme-dark body {
+  font-family: BrandoSansLight, AvenirNext-UltraLight, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Noto Sans, sans-serif;
+  color: hsl(42, 8%, 80%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpolygon points='4.25 0 0.25 8 0 8 4 0 ' fill='%23433f38'/%3E%3Cpolygon points='8 0.5 4.25 8 4 8 8 0 ' fill='%23433f38'/%3E%3Cpolygon points='0 0.5 0 0 0.25 0 ' fill='%23433f38'/%3E%3C/svg%3E");
 }
 @media (max-width: 31.24em) {
   body {
     line-height: 1.35;
   }
-}
-
-hr {
-  height: 0;
-  overflow: visible;
 }
 
 main {
@@ -275,11 +263,6 @@ h2, h3 {
   padding: 1.35rem 0 0.85rem;
 }
 
-pre {
-  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Noto Mono, Oxygen Mono, Liberation Mono, monospace;
-  font-size: 1em;
-}
-
 a {
   color: hsl(37, 80%, 5%);
   text-decoration: underline;
@@ -299,23 +282,10 @@ a:hover {
   color: hsl(42, 33%, 49%);
 }
 
-sup {
-  line-height: 1;
-}
-
-abbr[title] {
-  text-decoration: underline;
-  text-decoration: underline dotted;
-}
-
 b,
 strong {
   font-family: brandosans-semibold-v100, AvenirNext-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Noto Sans", sans-serif;
   font-weight: normal;
-}
-
-small {
-  font-size: 80%;
 }
 
 ::-moz-selection {
@@ -356,20 +326,9 @@ button {
   line-height: inherit;
 }
 
-button,
 input {
   margin: 0;
   overflow: visible;
-}
-
-button {
-  overflow: visible;
-  text-transform: none;
-  -webkit-appearance: button;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  touch-action: manipulation;
 }
 
 ::-moz-focus-inner {
@@ -382,7 +341,6 @@ button {
 }
 
 input,
-button,
 a {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
