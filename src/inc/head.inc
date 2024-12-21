@@ -1,4 +1,4 @@
-<?php ?><!doctype html>
+<?php $v1 = "v14"; ?><!doctype html>
 <html lang="nl" class='no-js core no-flexbox env-<?= $env; ?> server-<?= $server; ?> <?php if ($id == "siteIndex"): echo "frontpage"; endif; ?>'>
   <head>
     <meta charset="utf-8">
@@ -13,12 +13,12 @@
     <style id="fontfaceCss"><?php include "../src/inc/fontface.css.inc"; ?></style>
   <?php endif; ?>
   <?php if ( ($id == "siteIndex") && ($env == "dev") ): ?>
-    <link rel="stylesheet" href="<?= $assetPath; ?>css/critical.css?v13"  media="all">
-    <link rel="stylesheet" href="<?= $assetPath; ?>css/frontpage.css?v13" media="all">
+    <link rel="stylesheet" href="<?= $assetPath; ?>css/critical.css<?= $v1; ?>"  media="all">
+    <link rel="stylesheet" href="<?= $assetPath; ?>css/frontpage.css<?= $v1; ?>" media="all">
   <?php endif; ?>
   <?php if ( ($id == "siteIndex") && ($env == "prod") ): ?>
     <style id="critalCss"><?php include "inc/critical.css.inc"; ?></style>
-    <link rel="stylesheet" href="<?= $assetPath; ?>css/frontpage.min.css?v13" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="<?= $assetPath; ?>css/frontpage.min.css<?= $v1; ?>" media="print" onload="this.media='all'">
   <?php endif; ?>
   <?php if ( ($type == "landing-page") && ($env == "prod") ): ?>
     <style id="critalCss"><?php include "../inc/critical.css.inc"; ?></style>
@@ -27,11 +27,11 @@
     <style id="critalCss"><?php include "../../inc/critical.css.inc"; ?></style>
   <?php endif ?>
   <?php if ( ($env == "dev") ): ?>
-    <link rel="stylesheet" href="<?= $assetPath; ?>css/style.css?v13" media="all">
+    <link rel="stylesheet" href="<?= $assetPath; ?>css/style.css<?= $v1; ?>" media="all">
   <?php endif; ?>
   <?php if ( ($env == "prod") ): ?>
-    <link rel="stylesheet" href="<?= $assetPath; ?>css/style.min.css?v13" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="<?= $assetPath; ?>css/style.min.css?v13"></noscript>
+    <link rel="stylesheet" href="<?= $assetPath; ?>css/style.min.css<?= $v1; ?>" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="<?= $assetPath; ?>css/style.min.css<?= $v1; ?>"></noscript>
   <?php endif; ?>
   <?php if ($id == "siteIndex"): ?>
     <script id="headDetect"><?php include "head-detect.js.inc"; ?></script>
@@ -44,7 +44,7 @@
   <?php if ( ($env == "dev") && ($type == "landing-page") ): ?><style id="gridToggleCss"><?php include "../src/inc/grid-toggle.css.inc"; ?></style><?php endif ?>
   <?php if ( ($env == "dev") && ($type == "project-page") ): ?><style id="gridToggleCss"><?php include "../../inc/grid-toggle.css.inc"; ?></style><?php endif ?>
   <?php if ( ($server == "local") ): ?>
-    <link rel="stylesheet" href="<?= $assetPath; ?>css/local.min.css?v13" media="all">
+    <link rel="stylesheet" href="<?= $assetPath; ?>css/local.min.css<?= $v1; ?>" media="all">
   <?php endif; ?>
   <?php if ( ($env == "prod") ): ?>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
