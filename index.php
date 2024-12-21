@@ -3,9 +3,9 @@ $title = 'Webdesign';
 $type = 'index';
 $id = 'siteIndex';
 $description = 'webdesign - frontend development portfolio';
-include 'inc/config.inc';
-include 'inc/head.inc';
-include 'inc/header.inc';
+include 'src/inc/config.inc';
+include 'src/inc/head.inc';
+include 'src/inc/header.inc';
 // include 'inc/nav.inc';
   ob_start('compress_page');
 ?>
@@ -35,7 +35,7 @@ include 'inc/header.inc';
   </article>
 
 </main>
-<?php include 'inc/footer.inc'; ?>
+<?php include 'src/inc/footer.inc'; ?>
 <?php
 function compress_page($buffer) {
 $search = array(

@@ -2,6 +2,11 @@
 // $rootUrl = "http://localhost/github.com/atelierbram/atelierbramdehaan.nl/src/";
 // $assetPath = "http://localhost/github.com/atelierbram/atelierbramdehaan.nl/docs/assets/";
 
+// cd path/to/your/app
+//  php -S 127.0.0.1:8000
+// $rootUrl = "http://127.0.0.1:8000";
+// $assetPath = "http://127.0.0.1:8000/docs/assets/";
+
 $rootUrl = "https://atelierbramdehaan.nl/";
 $assetPath = "https://atelierbramdehaan.nl/assets/";
 

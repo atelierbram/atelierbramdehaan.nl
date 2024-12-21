@@ -3,15 +3,15 @@
   </footer>
 </div><!-- /#page.site> -->
 <?php if ( ($env == "dev") && ($id == "siteIndex") ): ?>
-<script id="toggleGridJs"><?php include "inc/toggle-grid.js.inc" ?></script>
+<script id="toggleGridJs"><?php include "src/inc/toggle-grid.js.inc" ?></script>
 <?php elseif ($env == "dev") : ?>
-<script id="toggleGridJs"><?php include "../inc/toggle-grid.js.inc" ?></script>
+<script id="toggleGridJs"><?php include "../src/inc/toggle-grid.js.inc" ?></script>
 <?php endif; ?>
 <?php if ($id == "siteIndex"): ?>
-<script id="themeSwitchJs"><?php include "inc/theme-switch-with-local-storage.js.inc" ?></script>
-<script id="toggleLanguageJs"><?php include "inc/toggle-language.js.inc" ?></script>
+<script id="themeSwitchJs"><?php include "src/inc/theme-switch-with-local-storage.js.inc" ?></script>
+<script id="toggleLanguageJs"><?php include "src/inc/toggle-language.js.inc" ?></script>
 <?php else: ?>
-<script id="themeSwitchJs"><?php include "../inc/theme-switch-with-local-storage.js.inc" ?></script>
+<script id="themeSwitchJs"><?php include "../src/inc/theme-switch-with-local-storage.js.inc" ?></script>
 <?php endif; ?>
   </body>
 </html>

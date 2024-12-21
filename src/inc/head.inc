@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="author" href="https://atelierbramdehaan.nl">
   <?php if ( ($id == "siteIndex") ): ?>
-    <style id="fontfaceCss"><?php include "inc/fontface.css.inc"; ?></style>
+    <style id="fontfaceCss"><?php include "fontface.css.inc"; ?></style>
   <?php endif; ?>
   <?php if ( ($type == "landing-page") ): ?>
-    <style id="fontfaceCss"><?php include "../inc/fontface.css.inc"; ?></style>
+    <style id="fontfaceCss"><?php include "../src/inc/fontface.css.inc"; ?></style>
   <?php endif; ?>
   <?php if ( ($id == "siteIndex") && ($env == "dev") ): ?>
     <link rel="stylesheet" href="<?= $assetPath; ?>css/critical.css?v12"  media="all">
@@ -34,14 +34,14 @@
     <noscript><link rel="stylesheet" href="<?= $assetPath; ?>css/style.min.css?v12"></noscript>
   <?php endif; ?>
   <?php if ($id == "siteIndex"): ?>
-    <script id="headDetect"><?php include "inc/head-detect.js.inc"; ?></script>
+    <script id="headDetect"><?php include "head-detect.js.inc"; ?></script>
   <?php elseif ($type == "landing-page"): ?>
-    <script id="headDetect"><?php include "../inc/head-detect.js.inc"; ?></script>
+    <script id="headDetect"><?php include "../src/inc/head-detect.js.inc"; ?></script>
   <?php else: ?>
     <script id="headDetect"><?php include "../../inc/head-detect.js.inc"; ?></script>
   <?php endif ?>
   <?php if ( ($env == "dev") && ($id == "siteIndex") ): ?><style id="gridToggleCss"><?php include "inc/grid-toggle.css.inc"; ?></style><?php endif ?>
-  <?php if ( ($env == "dev") && ($type == "landing-page") ): ?><style id="gridToggleCss"><?php include "../inc/grid-toggle.css.inc"; ?></style><?php endif ?>
+  <?php if ( ($env == "dev") && ($type == "landing-page") ): ?><style id="gridToggleCss"><?php include "../src/inc/grid-toggle.css.inc"; ?></style><?php endif ?>
   <?php if ( ($env == "dev") && ($type == "project-page") ): ?><style id="gridToggleCss"><?php include "../../inc/grid-toggle.css.inc"; ?></style><?php endif ?>
   <?php if ( ($server == "local") ): ?>
     <link rel="stylesheet" href="<?= $assetPath; ?>css/local.min.css?v12" media="all">
@@ -58,8 +58,8 @@
   </head>
   <body class="id-<?= $id; ?> page-type-<?= $type; ?>">
     <?php if ($id == "siteIndex"): ?>
-      <?php include "inc/icons.svg.inc"; ?>
+      <?php include "icons.svg.inc"; ?>
     <?php elseif ($type == "landing-page"): ?>
-      <?php include "../inc/icons.svg.inc"; ?>
+      <?php include "../src/inc/icons.svg.inc"; ?>
     <?php else : include "../../inc/icons.svg.inc"; ?>
     <?php endif ?>

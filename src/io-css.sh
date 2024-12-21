@@ -4,7 +4,7 @@
 write_to_file()
 {
 
-  curl "http://localhost/github.com/atelierbram/atelierbramdehaan.nl/docs/assets/css/critical.min.css" > "inc/critical.css.inc"
+  curl "http://localhost:8000/docs/assets/css/critical.min.css" > "inc/critical.css.inc"
 
 }
 
