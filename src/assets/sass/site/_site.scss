@@ -62,7 +62,7 @@ $bbgd: adjust-color($o3,$saturation: 5%);
   .theme-dark & {
     .logo {
       color: adjust-color($D16, $saturation: -35%);
-      background-image: url(#{$assetPath}img/svg/atelierbramdehaan-logo-14-brando-inverted_768x384.svg?v3);
+      background-image: url(#{$assetPath}img/svg/atelierbramdehaan-logo-14-brando-inverted_768x384.svg?v4);
       background-repeat: no-repeat;
       background-position: 8px 8px;
       // min-height: 95px;
